@@ -1,0 +1,56 @@
+$maincolor: rgb(252, 215, 182);
+$fontcolor: #243f4d;
+$icon-bg: #a3bbc8;
+$next-bg: #fff7f0;
+$pale-color: #7b7b7b;
+$random-color: #436372;
+$one-a: #1a1a1a;
+$payap: #262626;
+$white: #fff;
+
+%rubik-300 {
+  font-family: "Rubik", sans-serif;
+  font-weight: 300;
+}
+
+%rubik-400 {
+  font-family: "Rubik", sans-serif;
+  font-weight: 400;
+}
+
+%rubik-500 {
+  font-family: "Rubik", sans-serif;
+  font-weight: 500;
+}
+
+%rubik-700 {
+  font-family: "Rubik", sans-serif;
+  font-weight: 700;
+}
+
+%dmsans-400 {
+  font-family: "DMSans", sans-serif;
+  font-weight: 400;
+}
+
+%dmsans-500 {
+  font-family: "DMSans", sans-serif;
+  font-weight: 500;
+}
+
+%dmsans-700 {
+  font-family: "DMSans", sans-serif;
+  font-weight: 700;
+}
+
+%poppins-700 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+}
+
+@function max($numbers...) {
+  @return m#{a}x(#{$numbers});
+}
+@function min($numbers...) {
+  @return m#{i}n(#{$numbers});
+}

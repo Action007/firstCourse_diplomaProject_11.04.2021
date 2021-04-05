@@ -1,0 +1,101 @@
+.desing {
+  padding: 86px 0 388px;
+  
+  &__title {
+    margin-bottom: 25px;
+    text-align: center;
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 30px;
+    row-gap: 30px;
+    margin-bottom: 123px;
+
+    @include for-desktop-down {
+      grid-template-columns: repeat(2, 1fr);
+      justify-items: center;
+    }
+
+    @include for-phone-only {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+
+  &__item {
+    position: relative;
+    overflow: hidden;
+    max-width: 370px;
+    height: 246px;
+    width: 100%;
+    background-color: #f8f8f8;
+    z-index: 1;
+  }
+
+  &__link {
+    display: block;
+    max-width: 370px;
+  }
+
+  &__item:hover {
+    transform: scale(1.2);
+  }
+
+  &__subtitle {
+    max-width: 165px;
+    margin: 40px 0 10px 37px;
+    color: $one-a;
+    line-height: 1.2;
+    font-size: 20px;
+    @extend %rubik-400;
+  }
+
+  &__img {
+    position: absolute;
+    top: 30px;
+    right: 0;
+    z-index: -1;
+
+    @include for-desktop-down {
+      top: 25px;
+    }
+  }
+
+  &__text {
+    display: block;
+    transform: translateX(38px);
+    color: $icon-bg;
+  }
+}
+
+.popup {
+  position: relative;
+
+  &__link {
+    position: relative;
+    display: block;
+    min-height: 500px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    @include for-miniphone-only {
+      min-height: 400px;
+    }
+  }
+
+  &__link::before {
+    position: absolute;
+    content: "";
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 127px;
+    height: 127px;
+    background-image: url("../images/icon/popup-play.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+}

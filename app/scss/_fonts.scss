@@ -1,0 +1,80 @@
+@font-face {
+  font-family: 'Rubik', sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+  src:local('Rubik-Light'),
+  url('../fonts/Rubik-light.woff2') format('woff2'),
+  url('../fonts/Rubik-light.woff') format('woff');
+}
+
+
+@font-face {
+  font-family: 'Rubik', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  src:local('Rubik-Regular'),
+  url('../fonts/Rubik-Regular.woff2') format('woff2'),
+  url('../fonts/Rubik-Regular.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Rubik', sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+  src:local('Rubik-Medium'),
+  url('../fonts/Rubik-Medium.woff2') format('woff2'),
+  url('../fonts/Rubik-Medium.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Rubik', sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+  src:local('Rubik-Bold'),
+  url('../fonts/Rubik-Bold.woff2') format('woff2'),
+  url('../fonts/Rubik-Bold.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+  src:local('Rubik-Light'),
+  url('../fonts/Poppins-bold.woff2') format('woff2'),
+  url('../fonts/Poppins-bold.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'DMSans', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  src:local('DMSans-Regular'),
+  url('../fonts/DMSans-Regular.woff2') format('woff2'),
+  url('../fonts/DMSans-Regular.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'DMSans', sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+  src:local('DMSans-Medium'),
+  url('../fonts/DMSans-Medium.woff2') format('woff2'),
+  url('../fonts/DMSans-Medium.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'DMSans', sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+  src:local('DMSans-Bold'),
+  url('../fonts/DMSans-Bold.woff2') format('woff2'),
+  url('../fonts/DMSans-Bold.woff') format('woff');
+}

@@ -1,0 +1,343 @@
+@include('components/_head.html',{
+"head-title" : "Glee | Furniture store"
+})
+
+<body>
+  @include('components/_header.html')
+
+  <main class="main">
+    <section class="slider" id="home">
+      <h1 class="sr-only">
+        Furniture store.Chair,lamps and much more for home
+      </h1>
+      <h2 class="sr-only">Slider with our products</h2>
+
+      <div class="container container--big">
+        <ul class="slider__list">
+          <li class="slider__main">
+            <div class="slider__content">
+              <div class="slider__wrapper">
+                <h3 class="slider__title">
+                  smart and trendy
+                </h3>
+                <p>
+                  Dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+                </p>
+                <a class="link slider__link" href="#">
+                  Shop Now
+                  <svg class="arrow">
+                    <use xlink:href="images/icon/sprite.svg#arrow"></use>
+                  </svg>
+                </a>
+              </div>
+              <div class="slider__img-size">
+                <img class="slider__img" src="images/content/sofa.png" alt="sofa">
+              </div>
+            </div>
+          </li>
+          <li class="slider__main">
+            <div class="slider__content">
+              <div class="slider__wrapper">
+                <h3 class="slider__title">
+                  smart and trendy
+                </h3>
+                <p>
+                  Dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+                </p>
+                <a class="link slider__link" href="#">
+                  Show Now
+                  <svg class="arrow">
+                    <use xlink:href="images/icon/sprite.svg#arrow"></use>
+                  </svg>
+                </a>
+              </div>
+              <div class="slider__img-size">
+                <img class="slider__img" src="images/content/sofa.png" alt="sofa">
+              </div>
+            </div>
+          </li>
+          <li class="slider__main">
+            <div class="slider__content">
+              <div class="slider__wrapper">
+                <h3 class="slider__title">
+                  smart and trendy
+                </h3>
+                <p>
+                  Dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+                </p>
+                <a class="link slider__link" href="#">
+                  Show Now
+                  <svg class="arrow">
+                    <use xlink:href="images/icon/sprite.svg#arrow"></use>
+                  </svg>
+                </a>
+              </div>
+              <div class="slider__img-size">
+                <img class="slider__img" src="images/content/sofa.png" alt="sofa">
+              </div>
+            </div>
+          </li>
+        </ul>
+
+        <ul class="service">
+          <li class="service__items">
+            <div class="service__item service__item--support">
+              <span class="service__subtitle">
+                Support 24/7.
+              </span>
+              <p>
+                Contact us 24 hours a day,
+                7 days a week.
+              </p>
+            </div>
+          </li>
+          <li class="service__items">
+            <div class="service__item service__item--truck">
+              <span class="service__subtitle">
+                Delivery.
+              </span>
+              <p>
+                Free shipping on all US order.
+              </p>
+            </div>
+          </li>
+          <li class="service__items">
+            <div class="service__item service__item--card">
+              <span class="service__subtitle">
+                100% Payment secure.
+              </span>
+              <p>
+                We ensure secure payment
+                with PEV.
+              </p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="goods" id="services">
+      <div class="container">
+        <h2 class="title goods__title">
+          Products of the week
+        </h2>
+        
+        <ul class="mixitup">
+          <li class="mixitup__button">
+            <button class="mixitup__btn filter1" type="button" data-filter="all">
+              All
+            </button>
+          </li>
+          <li class="mixitup__button">
+            <button class="mixitup__btn filter1" type="button" data-filter=".category-a">
+              Furnitures
+            </button>
+          </li>
+          <li class="mixitup__button">
+            <button class="mixitup__btn filter1" type="button" data-filter=".category-b">
+              Chairs
+            </button>
+          </li>
+          <li class="mixitup__button">
+            <button class="mixitup__btn filter1" type="button" data-filter=".category-c">
+              Lighting
+            </button>
+          </li>
+          <li class="mixitup__button">
+            <button class="mixitup__btn filter1" type="button" data-filter=".category-d">
+              Decor
+            </button>
+          </li>
+        </ul>
+
+        <ul class="goods__items">
+          <li class="goods__item mix category-a">
+            @include('components/_product-card.html',{
+            "image" : "images/content/armchair1.png"
+            })
+          </li>
+          <li class="goods__item mix category-a">
+            @include('components/_product-card.html',{
+            "image" : "images/content/armchair2.png"
+            })
+          </li>
+          <li class="goods__item mix category-b">
+            @include('components/_product-card.html',{
+            "image" : "images/content/armchair3.png"
+            })
+          </li>
+          <li class="goods__item mix category-b">
+            @include('components/_product-card.html',{
+            "image" : "images/content/armchair4.png"
+            })
+          </li>
+          <li class="goods__item mix category-c">
+            @include('components/_product-card.html',{
+            "image" : "images/content/armchair5.png"
+            })
+          </li>
+          <li class="goods__item mix category-c">
+            @include('components/_product-card.html',{
+            "image" : "images/content/armchair6.png"
+            })
+          </li>
+          <li class="goods__item mix category-d">
+            @include('components/_product-card.html',{
+            "image" : "images/content/armchair7.png"
+            })
+          </li>
+          <li class="goods__item mix category-d">
+            @include('components/_product-card.html',{
+            "image" : "images/content/armchair8.png"
+            })
+          </li>
+        </ul>
+      </div>
+
+      <div class="promo" id="news">
+        <div class="container container--big">
+          <ul class="promo__list">
+            <li class="promo__items">
+              <div class="promo__img-size">
+                <img class="promo__img" src="images/content/promo1.png" alt="decor lamp">
+              </div>
+              <div class="promo__item">
+                <h3>
+                  <a class="promo__title" href="#">
+                    Mirum Notare Tellus
+                  </a>
+                </h3>
+                <p>
+                  LEDCornBulb Lamp 5W 7W 10W 12W 15W E26 E27LEDCornLight
+                </p>
+                <a class="link promo__link" href="#">
+                  View More
+                  <svg class="arrow">
+                    <use xlink:href="images/icon/sprite.svg#arrow"></use>
+                  </svg>
+                </a>
+              </div>
+            </li>
+            <li class="promo__items">
+              <div class="promo__img-size">
+                <img class="promo__img" src="images/content/promo2.png" alt="Long legged lamp">
+              </div>
+              <div class="promo__item">
+                <h3>
+                  <a class="promo__title" href="#">
+                    Malesuada Tempor Euismod
+                  </a>
+                </h3>
+                <p>
+                  50W 8000lm Compact Size for HID StreetLightReplacementLEDCornLight
+                </p>
+                <a class="link promo__link" href="#">View More
+                  <svg class="arrow">
+                    <use xlink:href="images/icon/sprite.svg#arrow"></use>
+                  </svg>
+                </a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="desing" id="about">
+      <div class="container">
+        <h2 class="title desing__title">New Design</h2>
+
+        <ul class="mixitup">
+          <li class="mixitup__button">
+            <button class="mixitup__btn filter2" type="button" data-filter="all">All</button>
+          </li>
+          <li class="mixitup__button">
+            <button class="mixitup__btn filter2" type="button" data-filter=".category-e">Furnitures</button>
+          </li>
+          <li class="mixitup__button">
+            <button class="mixitup__btn filter2" type="button" data-filter=".category-f">Chairs</button>
+          </li>
+          <li class="mixitup__button">
+            <button class="mixitup__btn filter2" type="button" data-filter=".category-g">Lighting</button>
+          </li>
+          <li class="mixitup__button">
+            <button class="mixitup__btn filter2" type="button" data-filter=".category-h">Decor</button>
+          </li>
+        </ul>
+
+        <ul class="desing__list">
+          <li class="desing__item mix category-e">
+            <a class="desing__link" href="#">
+              <h3 class="desing__subtitle">
+                Beat Flat Pendant Black
+              </h3>
+              <span class="desing__text">Classic</span>
+              <img class="desing__img" src="images/content/sofa1.png" alt="Beat Flat Pendant
+                Black">
+            </a>
+          </li>
+          <li class="desing__item mix category-e">
+            <a class="desing__link" href="#">
+              <h3 class="desing__subtitle">
+                Lampe Sur Pieds Bamboo
+              </h3>
+              <span class="desing__text">Classic</span>
+              <img class="desing__img" src="images/content/bed.png" alt="Lampe Sur Pieds
+                Bamboo">
+            </a>
+          </li>
+          <li class="desing__item mix category-f">
+            <a class="desing__link" href="#">
+              <h3 class="desing__subtitle">
+                Rattan Rocking Chair
+              </h3>
+              <span class="desing__text">Classic</span>
+              <img class="desing__img" src="images/content/armchair9.png" alt="Rattan Rocking
+                Chair">
+            </a>
+          </li>
+          <li class="desing__item mix category-f">
+            <a class="desing__link" href="#">
+              <h3 class="desing__subtitle">
+                Rattan Rocking Chair
+              </h3>
+              <span class="desing__text">Classic</span>
+              <img class="desing__img" src="images/content/bed2.png" alt="Rattan Rocking
+                Chair">
+            </a>
+          </li>
+          <li class="desing__item mix category-g">
+            <a class="desing__link" href="#">
+              <h3 class="desing__subtitle">
+                Rattan Rocking Chair
+              </h3>
+              <span class="desing__text">Classic</span>
+              <img class="desing__img desing__img--arm" src="images/content/armchair10.png" alt="Rattan Rocking
+                Chair">
+            </a>
+          </li>
+          <li class="desing__item mix category-h">
+            <a class="desing__link" href="#">
+              <h3 class="desing__subtitle">
+                Lampe Sur Pieds Bamboo
+              </h3>
+              <span class="desing__text">Classic</span>
+              <img class="desing__img" src="images/content/sofa2.png" alt="Lampe Sur Pieds
+                Bamboo">
+            </a>
+          </li>
+        </ul>
+      </div>
+      <a class="popup__link" data-fancybox href="https://www.youtube.com/watch?v=iik25wqIuFo"
+        style="background-image: url(images/content/popup-bg.png)">
+      </a>
+    </section>
+    @include('components/_commercial.html')
+  </main>
+
+  @include('components/_footer.html')
+
+  <script src="js/main.min.js"></script>
+</body>
+
+</html>

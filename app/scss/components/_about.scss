@@ -1,0 +1,252 @@
+.about {
+  @extend %rubik-400;
+  line-height: 2;
+
+  &__wrapper {
+    margin-bottom: 120px;
+  }
+
+  &__inner {
+    display: flex;
+    margin-bottom: 120px;
+
+    @include for-desktop-down {
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 70px;
+    }
+  }
+
+  &__main {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+    @include for-desktop-down {
+      justify-content: center;
+      margin-bottom: 50px;
+    }
+  }
+
+  &__img {
+    margin-right: 48px;
+
+    @include for-desktop-down {
+      width: 50%;
+      margin-right: 0;
+    }
+
+    @include for-phone-only {
+      width: 70%;
+    }
+
+    @include for-phone-only {
+      width: 90%;
+    }
+  }
+
+  &__items {
+    display: flex;
+    align-items: center;
+    margin-bottom: 18px;
+
+    @include for-desktop-down {
+      justify-content: center;
+    }
+
+    @include for-miniphone-only {
+      padding-top: 20px;
+    }
+
+    span {
+      margin-right: 24px;
+      @extend %rubik-700;
+      font-size: 140px;
+      line-height: 1.1;
+      color: $icon-bg;
+    }
+  }
+
+  &__item:first-child {
+    padding-top: 20px;
+  }
+
+  &__lead {
+    margin-bottom: 30px;
+    color: #243f4d;
+
+    @include for-desktop-down {
+      display: flex;
+      justify-content: center;
+    }
+  }
+
+  &__text {
+    padding-bottom: 57px;
+    margin-bottom: 30px;
+    border-bottom: 1px solid #e5eaf0;
+  }
+
+  & {
+    display: flex;
+
+    @include for-tablet-landscape-down {
+      flex-wrap: wrap;
+      justify-content: center;
+      row-gap: 40px;
+    }
+
+    @include for-phone-only {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  &__stat {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 33.333%;
+    padding-left: 65px;
+
+    @include for-tablet-landscape-down {
+      justify-content: center;
+      align-items: center;
+      width: 50%;
+      flex-wrap: wrap;
+    }
+  }
+
+  &__stat::before {
+    position: absolute;
+    content: "";
+    left: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+
+    @include for-desktop-down {
+      align-items: center;
+      left: 33%;
+    }
+
+    @include for-phone-only {
+      left: 22%;
+    }
+
+    @include for-miniphone-only {
+      left: 12%;
+    }
+  }
+
+  &__stat--left::before {
+    background-image: url("../images/icon/notes.svg");
+    width: 36px;
+    height: 37px;
+  }
+
+  &__stat--center::before {
+    background-image: url("../images/icon/microphone.svg");
+    width: 43px;
+    height: 39px;
+  }
+
+  &__stat--right::before {
+    background-image: url("../images/icon/medal.svg");
+    width: 41px;
+    height: 40px;
+  }
+
+  &__stat:not(:first-child) {
+    border-left: 1px solid #e5eaf0;
+  }
+
+  &__stat:last-child,
+  &__stat:nth-child(2) {
+    @include for-tablet-landscape-down {
+      border-left: none;
+      border-top: 1px solid #e5eaf0;
+      padding-top: 30px;
+    }
+  }
+
+  &__num {
+    @extend %rubik-300;
+    font-size: 36px;
+    line-height: 1.1;
+  }
+
+  &st-inner {
+    min-height: 320px;
+    background-color: #fcd7b6;
+  }
+
+  &__list-items {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin: 0 auto;
+    max-width: 1030px;
+    min-height: 245px;
+
+    @include for-tablet-portrait-down {
+      display: grid;
+      grid-template-columns: repeat(2, 2fr);
+      row-gap: 40px;
+      padding: 40px 0;
+    }
+
+    @include for-miniphone-only {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  &__list-item {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding-top: 75px;
+    align-items: center;
+    @extend %rubik-300;
+    font-size: 36px;
+    line-height: 1.1;
+
+    &--stat::after {
+      background-image: url("../images/icon/moni-stat.svg");
+      width: 74px;
+      height: 60px;
+    }
+
+    &--truck::after {
+      background-image: url("../images/icon/truck2.svg");
+    }
+
+    &--phone::after {
+      background-image: url("../images/icon/tel24.svg");
+    }
+
+    &--medal::after {
+      background-image: url("../images/icon/medal2.svg");
+    }
+  }
+
+  &__list-item::after {
+    position: absolute;
+    content: "";
+    top: 0;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 70px;
+    height: 60px;
+  }
+
+  &__list-sub {
+    font-size: 18px;
+    line-height: 1.7;
+    padding-top: 10px;
+  }
+}

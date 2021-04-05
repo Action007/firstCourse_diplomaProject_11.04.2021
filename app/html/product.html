@@ -1,0 +1,269 @@
+@include('./components/_head.html',{
+"head-title" : "Glee | Our Products"
+})
+
+<body>
+  @include('components/_header.html')
+
+  <main class="main">
+    @include('components/_breadcrumbs.html',{
+    "title" : "Product list",
+    "subtitle1" : "Home",
+    "subtitle2" : "Product list"
+    })
+
+    <section class="product">
+      <div class="container">
+        <div class="product__wrapper">
+          <div class="filter">
+            <ul class="filter__inner">
+              <li class="filter__items">
+                <span class="filter__title">category</span>
+                <ul class="filter__list">
+                  <li class="filter__item">
+                    <button class="filter__btn active" type="button">
+                      Chair
+                    </button>
+                  </li>
+                  <li class="filter__item">
+                    <button class="filter__btn" type="button">
+                      Table
+                    </button>
+                  </li>
+                  <li class="filter__item">
+                    <button class="filter__btn" type="button">
+                      Lamp
+                    </button>
+                  </li>
+                  <li class="filter__item">
+                    <button class="filter__btn" type="button">
+                      Watch
+                    </button>
+                  </li>
+                  <li class="filter__item">
+                    <button class="filter__btn" type="button">
+                      Clock
+                    </button>
+                  </li>
+                </ul>
+              </li>
+              <li class="filter__items filter__items--two">
+                <span class="filter__title filter__title--two">price</span>
+                <form class="filter__form" action="#">
+                  <label>
+                    <input type="text" class="filter__input" data-min="0" data-max="1000" data-from="100" data-to="500">
+                  </label>
+                  <div class="filter__wrapper">
+                    <div>
+                      $<span class="filter__from"></span>.00
+                    </div>
+                    <div>
+                      $<span class="filter__to"></span>.00
+                    </div>
+                  </div>
+                </form>
+              </li>
+              <li class="filter__items filter__items--three">
+                <span class="filter__title filter__title--three">brand</span>
+                <ul class="filter__list">
+                  <li class="filter__item">
+                    <form class="filter__form-inner">
+                      <input class="filter__checkbox" type="checkbox" checked id="input1">
+                      <label class="filter__button" for="input1">
+                        RFL
+                        <span class="filter__num">(10)</span>
+                      </label>
+                    </form>
+                  </li>
+                  <li class="filter__item">
+                    <form class="filter__form-inner">
+                      <input class="filter__checkbox" type="checkbox" id="input2">
+                      <label class="filter__button" for="input2">
+                        Brothers
+                        <span class="filter__num">(10)</span>
+                      </label>
+                    </form>
+                  </li>
+                  <li class="filter__item">
+                    <form class="filter__form-inner">
+                      <input class="filter__checkbox" type="checkbox" id="input3">
+                      <label class="filter__button" for="input3">
+                        Regal
+                        <span class="filter__num">(10)</span>
+                      </label>
+                    </form>
+                  </li>
+                  <li class="filter__item">
+                    <form class="filter__form-inner">
+                      <input class="filter__checkbox" type="checkbox" id="input4">
+                      <label class="filter__button" for="input4">
+                        Nadia
+                        <span class="filter__num">(10)</span>
+                      </label>
+                    </form>
+                  </li>
+                  <li class="filter__item">
+                    <form class="filter__form-inner">
+                      <input class="filter__checkbox" type="checkbox" id="input5">
+                      <label class="filter__button" for="input5">
+                        Otobi
+                        <span class="filter__num">(10)</span>
+                      </label>
+                    </form>
+                  </li>
+                </ul>
+              </li>
+              <li class="filter__items filter__items--last">
+                <span class="filter__title filter__title--last">recent products</span>
+                <ul class="filter__list">
+                  <li class="filter__li">
+                    <a href="#">
+                      <img class="filter__img" src="images/content/nightlight1.png" alt="">
+                    </a>
+                    <div class="filter__wrap">
+                      <a class="filter__link" href="#">Pendant lamp</a>
+                      <div class="star" data-rateyo-rating="4"></div>
+                      23$
+                    </div>
+                  </li>
+                  <li class="filter__li filter__li--two">
+                    <a href="#">
+                      <img class="filter__img" src="images/content/nightlight2.png" alt="">
+                    </a>
+                    <div class="filter__wrap">
+                      <a class="filter__link" href="#">Pendant lamp</a>
+                      <div class="star" data-rateyo-rating="4"></div>
+                      23$
+                    </div>
+                  </li>
+                  <li class="filter__li filter__li--last">
+                    <a href="#">
+                      <img class="filter__img" src="images/content/nightlight3.png" alt="">
+                    </a>
+                    <div class="filter__wrap">
+                      <a class="filter__link" href="#">Pendant lamp</a>
+                      <div class="star" data-rateyo-rating="4"></div>
+                      23$
+                    </div>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <div class="product__wrap">
+            <div class="product__filter">
+              <div class="product__filter-inner">
+                <span>View</span>
+                <button class="product__filter-btn product__filter-btn--active button-grid">
+                  <svg class="product__filter-svg">
+                    <use xlink:href="images/icon/sprite.svg#grid"></use>
+                    <span class="sr-only">Normal view</span>
+                  </svg>
+                </button>
+                <button class="product__filter-btn button-list">
+                  <svg class="product__filter-svg">
+                    <use xlink:href="images/icon/sprite.svg#list"></use>
+                    <span class="sr-only">list view</span>
+                  </svg>
+                </button>
+              </div>
+              <button class="filter-btn" type="button">
+                Filter
+                <svg class="filter-btn__svg">
+                  <use xlink:href="images/icon/sprite.svg#18819658861556283886"></use>
+                </svg>
+              </button>
+            </div>
+            <ul class="product__list">
+              <li class="product__item">
+                @include('components/_product-card2.html',{
+                "num" : "armchair1"
+                })
+              </li>
+              <li class="product__item">
+                @include('components/_product-card2.html',{
+                "num" : "armchair2"
+                })
+              </li>
+              <li class="product__item">
+                @include('components/_product-card2.html',{
+                "num" : "armchair3"
+                })
+              </li>
+              <li class="product__item">
+                @include('components/_product-card2.html',{
+                "num" : "armchair4"
+                })
+              </li>
+              <li class="product__item">
+                @include('components/_product-card2.html',{
+                "num" : "armchair5"
+                })
+              </li>
+              <li class="product__item">
+                @include('components/_product-card2.html',{
+                "num" : "armchair4"
+                })
+              </li>
+              <li class="product__item">
+                @include('components/_product-card2.html',{
+                "num" : "armchair6"
+                })
+              </li>
+              <li class="product__item">
+                @include('components/_product-card2.html',{
+                "num" : "armchair7"
+                })
+              </li>
+              <li class="product__item">
+                @include('components/_product-card2.html',{
+                "num" : "armchair8"
+                })
+              </li>
+              <li class="product__item">
+                @include('components/_product-card2.html',{
+                "num" : "bed--big"
+                })
+              </li>
+              <li class="product__item">
+                @include('components/_product-card2.html',{
+                "num" : "armchair10"
+                })
+              </li>
+              <li class="product__item">
+                @include('components/_product-card2.html',{
+                "num" : "bed2--big"
+                })
+              </li>
+            </ul>
+            <ul class="pagination">
+              <li class="pagination__item">
+                <a class="pagination__link" href="#">1</a>
+              </li>
+              <li class="pagination__item">
+                <a class="pagination__link" href="#">2</a>
+              </li>
+              <li class="pagination__item">
+                <a class="pagination__link" href="#">3</a>
+              </li>
+              <li class="pagination__item">
+                <a class="pagination__link" href="#">Next</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="product__inner">
+        <div class="container">
+          @include('components/_partners.html')
+        </div>
+      </div>
+    </section>
+  </main>
+
+  @include('components/_footer.html')
+
+  <script src="js/main.min.js"></script>
+</body>
+
+</html>

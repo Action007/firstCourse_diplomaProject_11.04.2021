@@ -1,0 +1,167 @@
+.commercial {
+  margin-bottom: 77px;
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    align-items: center;
+    color: $one-a;
+    transform: translateY(-270px);
+  }
+
+  &__add {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 83px;
+    color: $payap;
+    transition: color 0.3s ease;
+
+    @include for-phone-only {
+      font-size: 14px;
+    }
+
+    .right-arrow {
+      width: 7px;
+      height: 11px;
+      fill: $payap;
+      transition: fill 0.3s ease;
+    }
+    &:hover {
+      color: $icon-bg;
+    }
+    &:hover .right-arrow {
+      fill: $icon-bg;
+    }
+  }
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__bottom {
+    height: 440px;
+    background-color: $next-bg;
+
+    @include for-desktop-down {
+      height: auto;
+    }
+  }
+
+  &__items {
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-250px);
+
+    @include for-desktop-down {
+      flex-wrap: wrap;
+      justify-content: center;
+      column-gap: 20px;
+      row-gap: 25px;
+    }
+  }
+
+  &__item {
+    position: relative;
+    max-width: 370px;
+    width: 100%;
+    background: $white;
+  }
+
+  &__img-size {
+    min-height: 250px;
+  }
+
+  &__subtitle {
+    max-width: 298px;
+    margin: 33px 0 0 30px;
+    font-size: 18px;
+    min-height: 80px;
+    border-bottom: 1px solid #e0e0e0;
+  }
+
+  &__link {
+    line-height: 1.2;
+    color: $payap;
+    transition: all 0.3s ease;
+    border-bottom: 1px solid transparent;
+  }
+
+  &__link:hover {
+    color: $icon-bg;
+    border-color: $icon-bg;
+  }
+
+  &__title {
+    @include for-phone-only {
+      font-size: 24px;
+    }
+
+    @include for-miniphone-only {
+      font-size: 18px;
+    }
+  }
+
+  &__logo-size {
+    max-width: 170px;
+  }
+
+  &__text {
+    position: absolute;
+    transform: translate(27%, -60%);
+    padding: 6px 32px;
+    width: 103px;
+    height: 30px;
+    font-size: 14px;
+    border-radius: 15px;
+    color: $white;
+    background-color: $icon-bg;
+  }
+
+  &__date,
+  &__admin {
+    position: relative;
+    display: inline-block;
+    font-size: 12px;
+    text-transform: uppercase;
+  }
+
+  &__date {
+    position: relative;
+    padding: 18px 30px 25px 55px;
+  }
+
+  &__date::after,
+  &__admin::after {
+    position: absolute;
+    content: "";
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 20px;
+    height: 20px;
+    left: 30px;
+    top: 40%;
+    transform: translateY(-40%);
+  }
+
+  &__date::after {
+    background-image: url("../images/icon/calendar.svg");
+  }
+
+  &__admin::after {
+    background-image: url("../images/icon/user.svg");
+    left: -25px;
+  }
+
+  &__wrapper {
+    transform: translateY(-157px);
+  }
+}
+
+.slick-track {
+  display: flex;
+  align-items: center;
+}
