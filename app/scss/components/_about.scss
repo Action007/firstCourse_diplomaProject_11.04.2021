@@ -3,6 +3,7 @@
   line-height: 2;
 
   &__wrapper {
+    padding-top: 121px;
     margin-bottom: 120px;
   }
 
@@ -87,7 +88,7 @@
     border-bottom: 1px solid #e5eaf0;
   }
 
-  & {
+  &__li {
     display: flex;
 
     @include for-tablet-landscape-down {
@@ -99,6 +100,7 @@
     @include for-phone-only {
       flex-direction: column;
       align-items: center;
+      row-gap: 30px;
     }
   }
 
@@ -164,12 +166,19 @@
     border-left: 1px solid #e5eaf0;
   }
 
-  &__stat:last-child,
-  &__stat:nth-child(2) {
+  &__stat:last-child {
     @include for-tablet-landscape-down {
       border-left: none;
       border-top: 1px solid #e5eaf0;
       padding-top: 30px;
+    }
+  }
+
+  &__stat:nth-child(2) {
+    @include for-phone-only {
+      border-top: 1px solid #e5eaf0;
+      border-left: none;
+      padding-top: 20px;
     }
   }
 
@@ -179,7 +188,7 @@
     line-height: 1.1;
   }
 
-  &st-inner {
+  &__list-inner {
     min-height: 320px;
     background-color: #fcd7b6;
   }
