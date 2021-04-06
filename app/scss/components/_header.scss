@@ -197,47 +197,47 @@
     @include for-miniphone-only {
       left: 130px;
     }
-
-    .menu-nav__link--point,
-    .menu-nav__link--search {
-      @include for-miniphone-only {
-        width: 40px;
-        height: 40px;
-        background-color: #a3bbc8;
-      }
+  }
+  
+  .menu-nav__link--point,
+  .menu-nav__link--search {
+    @include for-miniphone-only {
+      width: 40px;
+      height: 40px;
+      background-color: #a3bbc8;
     }
+  }
 
-    .menu-nav__link--search {
-      @include for-phone-only {
-        background-color: #a3bbc8;
-      }
+  .menu-nav__link--search {
+    @include for-phone-only {
+      background-color: #a3bbc8;
     }
+  }
 
-    .menu-nav__svg--search {
-      @include for-phone-only {
-        fill: white;
-      }
+  .menu-nav__svg--search {
+    @include for-phone-only {
+      fill: white;
     }
+  }
 
-    .menu-nav__link--heart,
-    .menu-nav__link--basket {
-      @include for-miniphone-only {
-        width: 78px;
-        height: 40px;
-      }
+  .menu-nav__link--heart,
+  .menu-nav__link--basket {
+    @include for-miniphone-only {
+      width: 78px;
+      height: 40px;
     }
+  }
 
-    .menu-nav__svg {
-      @include for-miniphone-only {
-        height: 40px;
-      }
+  .menu-nav__svg {
+    @include for-miniphone-only {
+      height: 40px;
     }
+  }
 
-    .menu-nav__num {
-      @include for-miniphone-only {
-        left: 42px;
-        top: 5px;
-      }
+  .menu-nav__num {
+    @include for-miniphone-only {
+      left: 42px;
+      top: 5px;
     }
   }
 

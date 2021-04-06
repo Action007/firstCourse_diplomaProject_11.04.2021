@@ -13,42 +13,14 @@
     })
 
     <section class="product">
+      <h2 class="sr-only">Our products</h2>
       <div class="container">
         <div class="product__wrapper">
           <div class="filter">
-            <ul class="filter__inner">
-              <li class="filter__items">
-                <span class="filter__title">category</span>
-                <ul class="filter__list">
-                  <li class="filter__item">
-                    <button class="filter__btn active" type="button">
-                      Chair
-                    </button>
-                  </li>
-                  <li class="filter__item">
-                    <button class="filter__btn" type="button">
-                      Table
-                    </button>
-                  </li>
-                  <li class="filter__item">
-                    <button class="filter__btn" type="button">
-                      Lamp
-                    </button>
-                  </li>
-                  <li class="filter__item">
-                    <button class="filter__btn" type="button">
-                      Watch
-                    </button>
-                  </li>
-                  <li class="filter__item">
-                    <button class="filter__btn" type="button">
-                      Clock
-                    </button>
-                  </li>
-                </ul>
-              </li>
-              <li class="filter__items filter__items--two">
-                <span class="filter__title filter__title--two">price</span>
+            <div class="filter__inner">
+              @include('components/_filter-category.html')
+              <div class="filter__items filter__items--two">
+                <h3 class="filter__title filter__title--two">price</h3>
                 <form class="filter__form" action="#">
                   <label>
                     <input type="text" class="filter__input" data-min="0" data-max="1000" data-from="100" data-to="500">
@@ -62,9 +34,9 @@
                     </div>
                   </div>
                 </form>
-              </li>
-              <li class="filter__items filter__items--three">
-                <span class="filter__title filter__title--three">brand</span>
+              </div>
+              <div class="filter__items filter__items--three">
+                <h3 class="filter__title filter__title--three">brand</h3>
                 <ul class="filter__list">
                   <li class="filter__item">
                     <form class="filter__form-inner">
@@ -112,58 +84,64 @@
                     </form>
                   </li>
                 </ul>
-              </li>
-              <li class="filter__items filter__items--last">
-                <span class="filter__title filter__title--last">recent products</span>
+              </div>
+              <div class="filter__items filter__items--last">
+                <h3 class="filter__title filter__title--last">recent products</h3>
                 <ul class="filter__list">
                   <li class="filter__li">
                     <a href="#">
-                      <img class="filter__img" src="images/content/nightlight1.png" alt="">
+                      <img class="filter__img" src="images/content/nightlight1.png" alt="night light">
                     </a>
                     <div class="filter__wrap">
-                      <a class="filter__link" href="#">Pendant lamp</a>
+                      <h4>
+                        <a class="filter__link" href="#">Pendant lamp</a>
+                      </h4>
                       <div class="star" data-rateyo-rating="4"></div>
-                      23$
+                      <span>23$</span>
                     </div>
                   </li>
                   <li class="filter__li filter__li--two">
                     <a href="#">
-                      <img class="filter__img" src="images/content/nightlight2.png" alt="">
+                      <img class="filter__img" src="images/content/nightlight2.png" alt="night light">
                     </a>
                     <div class="filter__wrap">
-                      <a class="filter__link" href="#">Pendant lamp</a>
+                      <h4>
+                        <a class="filter__link" href="#">Pendant lamp</a>
+                      </h4>
                       <div class="star" data-rateyo-rating="4"></div>
-                      23$
+                      <span>23$</span>
                     </div>
                   </li>
                   <li class="filter__li filter__li--last">
                     <a href="#">
-                      <img class="filter__img" src="images/content/nightlight3.png" alt="">
+                      <img class="filter__img" src="images/content/nightlight3.png" alt="night light">
                     </a>
                     <div class="filter__wrap">
-                      <a class="filter__link" href="#">Pendant lamp</a>
+                      <h4>
+                        <a class="filter__link" href="#">Pendant lamp</a>
+                      </h4>
                       <div class="star" data-rateyo-rating="4"></div>
-                      23$
+                      <span>23$</span>
                     </div>
                   </li>
                 </ul>
-              </li>
-            </ul>
+              </div>
+            </div>
           </div>
           <div class="product__wrap">
             <div class="product__filter">
               <div class="product__filter-inner">
                 <span>View</span>
                 <button class="product__filter-btn product__filter-btn--active button-grid">
+                  <span class="sr-only">Normal view</span>
                   <svg class="product__filter-svg">
                     <use xlink:href="images/icon/sprite.svg#grid"></use>
-                    <span class="sr-only">Normal view</span>
                   </svg>
                 </button>
                 <button class="product__filter-btn button-list">
+                  <span class="sr-only">list view</span>
                   <svg class="product__filter-svg">
                     <use xlink:href="images/icon/sprite.svg#list"></use>
-                    <span class="sr-only">list view</span>
                   </svg>
                 </button>
               </div>
@@ -248,20 +226,7 @@
                 })
               </li>
             </ul>
-            <ul class="pagination">
-              <li class="pagination__item">
-                <a class="pagination__link" href="#">1</a>
-              </li>
-              <li class="pagination__item">
-                <a class="pagination__link" href="#">2</a>
-              </li>
-              <li class="pagination__item">
-                <a class="pagination__link" href="#">3</a>
-              </li>
-              <li class="pagination__item">
-                <a class="pagination__link" href="#">Next</a>
-              </li>
-            </ul>
+            @include('components/_pagination.html')
           </div>
         </div>
       </div>

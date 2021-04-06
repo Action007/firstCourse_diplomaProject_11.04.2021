@@ -92,7 +92,7 @@ $(function () {
     $('body').toggleClass('lock1');
   })
 
-  $(document).on('click', '.filter__btn', function () {
+  $(document).on('click', '.filter-category__btn', function () {
     $(this).parent().siblings().children().removeClass('active');
     $(this).addClass('active');
   })
