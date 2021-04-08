@@ -18,7 +18,9 @@
         <div class="product__wrapper">
           <div class="filter">
             <div class="filter__inner">
-              @include('components/_filter-category.html')
+              <div class="filter__items-inner">
+                @include('components/_filter-category.html')
+              </div>
               <div class="filter__items filter__items--two">
                 <h3 class="filter__title filter__title--two">price</h3>
                 <form class="filter__form" action="#">
@@ -154,75 +156,75 @@
             </div>
             <ul class="product__list">
               <li class="product__item">
-                @include('components/_product-card2.html',{
-                "num" : "armchair1",
-                "card-text2" : "Wooden chair"
+                @include('components/_product-card.html',{
+                "image" : "images/content/armchair1.png",
+                "card-text" : "Wooden chair"
                 })
               </li>
               <li class="product__item">
-                @include('components/_product-card2.html',{
-                "num" : "armchair2",
-                "card-text2" : "Wooden chair"
+                @include('components/_product-card.html',{
+                "image" : "images/content/armchair2.png",
+                "card-text" : "Wooden chair"
                 })
               </li>
               <li class="product__item">
-                @include('components/_product-card2.html',{
-                "num" : "armchair3",
-                "card-text2" : "Retro table"
-                })
-              </li>
-              <li class="product__item">
-                @include('components/_product-card2.html',{
-                "num" : "armchair4",
-                "card-text2" : "Wooden chair"
-                })
-              </li>
-              <li class="product__item">
-                @include('components/_product-card2.html',{
-                "num" : "armchair5",
-                "card-text2" : "Wooden chair"
-                })
-              </li>
-              <li class="product__item">
-                @include('components/_product-card2.html',{
-                "num" : "armchair4",
-                "card-text2" : "Wooden chair"
-                })
-              </li>
-              <li class="product__item">
-                @include('components/_product-card2.html',{
-                "num" : "armchair6",
-                "card-text2" : "Wooden chair"
-                })
-              </li>
-              <li class="product__item">
-                @include('components/_product-card2.html',{
-                "num" : "armchair7",
+                @include('components/_product-card.html',{
+                "image" : "images/content/armchair3.png",
                 "card-text" : "Retro table"
                 })
               </li>
               <li class="product__item">
-                @include('components/_product-card2.html',{
-                "num" : "armchair8",
-                "card-text2" : "Wooden chair"
+                @include('components/_product-card.html',{
+                "image" : "images/content/armchair4.png",
+                "card-text" : "Wooden chair"
                 })
               </li>
               <li class="product__item">
-                @include('components/_product-card2.html',{
-                "num" : "bed--big",
-                "card-text2" : "Wooden chair"
+                @include('components/_product-card.html',{
+                "image" : "images/content/armchair5.png",
+                "card-text" : "Wooden chair"
                 })
               </li>
               <li class="product__item">
-                @include('components/_product-card2.html',{
-                "num" : "armchair10",
-                "card-text2" : "Wooden chair"
+                @include('components/_product-card.html',{
+                "image" : "images/content/armchair4.png",
+                "card-text" : "Wooden chair"
                 })
               </li>
               <li class="product__item">
-                @include('components/_product-card2.html',{
-                "num" : "bed2--big",
-                "card-text2" : "Wooden chair"
+                @include('components/_product-card.html',{
+                "image" : "images/content/armchair6.png",
+                "card-text" : "Wooden chair"
+                })
+              </li>
+              <li class="product__item">
+                @include('components/_product-card.html',{
+                "image" : "images/content/armchair7.png",
+                "card-text" : "Retro table"
+                })
+              </li>
+              <li class="product__item">
+                @include('components/_product-card.html',{
+                "image" : "images/content/armchair8.png",
+                "card-text" : "Wooden chair"
+                })
+              </li>
+              <li class="product__item">
+                @include('components/_product-card.html',{
+                "image" : "images/content/bed--big.png",
+                "card-text" : "Wooden chair"
+                })
+              </li>
+              <li class="product__item">
+                @include('components/_product-card.html',{
+                "image" : "images/content/armchair10.png",
+                "card-text" : "Wooden chair"
+                })
+              </li>
+              <li class="product__item">
+                @include('components/_product-card.html',{
+                "image" : "images/content/bed2--big.png",
+                "card-text" : "Wooden chair"
                 })
               </li>
             </ul>

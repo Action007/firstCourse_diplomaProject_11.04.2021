@@ -1,0 +1,264 @@
+@include('./components/_head.html',{
+"head-title" : "Glee | Blog"
+})
+
+<body>
+  @include('components/_header.html')
+
+  <main class="main">
+    @include('components/_breadcrumbs.html',{
+    "title" : "Product Review",
+    "subtitle1" : "Home",
+    "subtitle2" : "Blog"
+    })
+
+    <section class="blog">
+      <div class="container">
+        <div class="blog__inner">
+          <div class="blog__items-inner">
+            <button class="filter-btn" type="button">
+              Filter
+              <svg class="filter-btn__svg">
+                <use xlink:href="images/icon/sprite.svg#18819658861556283886"></use>
+              </svg>
+            </button>
+            <a class="blog__img-inner" href="#">
+              <img class="blog__img" src="../images/content/room--big1.jpg" alt="Furniture with gray flowers">
+            </a>
+            <div class="blog__wrap">
+              <time class="blog__time">
+                28 janvar,2020
+              </time>
+              <span class="blog__admin">by admin</span>
+            </div>
+            <div class="blog-one__wrapper">
+              <span class="blog__title">
+                Fonsectetur adipisicing eiusmod
+              </span>
+              <div class="blog-one__desc">
+                <p>
+                  Sdipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                  venia Lorem ipsum
+                  dolor sit amet, consectetur adipisicing elit,
+                </p>
+              </div>
+              <div class="blog-one__text blog-one__text--one">
+                <p>
+                  consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                  enim ad minim
+                  veniam, quis nostrud exercitation ullamco laboris nisi ut alLorem ipsum dolor sit amet, consectetur
+                  adipisicing elit,
+                  sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                  nostrud exercitation
+                  ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                  voluptate velit esse
+                  cillum dolore eu fugiat nulla pariatur.
+                </p>
+              </div>
+            </div>
+            <blockquote class="blog-one__blockquote">
+              <div class="blog-one__slogan">
+                <p>
+                  Sdipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                  veniam, quis
+                  nostrud exercitation ullamco laboris
+                </p>
+              </div>
+              <span class="blog-one__author">
+                Wiusmod tempor
+              </span>
+            </blockquote>
+            <div class="blog-one__wrap">
+              <img src="../images/content/007.jpg" alt="Furniture with blue flowers">
+              <div class="blog-one__text-inner">
+                <span class="blog-one__subtitle">
+                  Riusmod tempor incididunt
+                </span>
+                <div class="blog-one__text blog-one__text--two">
+                  <p>
+                    consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                    enim ad minim
+                    veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="blog-one__subtitle">
+              Kajtsal jervcm eoaspckred
+            </div>
+            <div class="blog-one__text blog-one__text--three">
+              <p>
+                consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+                ad minim
+                veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+              </p>
+            </div>
+            <div class="blog-one__person-inner">
+              <div class="blog-one__person">
+                <div class="blog-one__person-img">
+                  <img src="../images/content/person1.jpg" alt="Young guy">
+                </div>
+                <div class="blog-one__name-inner">
+                  <p class="blog-one__name">
+                    Mark N. Hernandez
+                  </p>
+                  <span>
+                    Designer
+                  </span>
+                </div>
+              </div>
+              <div class="blog-one__social-inner">
+                <div class="blog-one__social">
+                  <span class="blog-one__exrept">Tags:</span>
+                  <span>All,Trending</span>
+                </div>
+                <div class="blog-one__social">
+                  <span class="blog-one__lead">Share:</span>
+                  <ul class="blog-one__list">
+                    <li class="blog-one__item">
+                      <a href="#">
+                        <span class="sr-only">Click to open Facebook</span>
+                        <svg class="blog-one__icon">
+                          <use xlink:href="images/icon/sprite.svg#facebook"></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="blog-one__item">
+                      <a href="#">
+                        <span class="sr-only">Click to open Twitter</span>
+                        <svg class="blog-one__icon">
+                          <use xlink:href="images/icon/sprite.svg#twitter"></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="blog-one__item">
+                      <a href="#">
+                        <span class="sr-only">Click to open Instagram</span>
+                        <svg class="blog-one__icon">
+                          <use xlink:href="images/icon/sprite.svg#instagram"></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="blog-one__item">
+                      <a href="#">
+                        <span class="sr-only">Click to open goole</span>
+                        <svg class="blog-one__icon">
+                          <use xlink:href="images/icon/sprite.svg#google"></use>
+                        </svg>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="blog-one__caption caption">
+              3 Comments
+            </div>
+            <ul class="blog-one__items">
+              <li class="blog-one__element">
+                <div class="blog-one__image">
+                  <img src="../images/content/rowling.jpg" alt="Joanne Rowling">
+                </div>
+                <div class="blog-one__box">
+                  <div class="blog-one__row">
+                    <div class="blog-one__nam">
+                      Delores G. Roberts
+                    </div>
+                    <time>Add 11 Oct 2020</time>
+                  </div>
+                  <div class="blog-one__text blog-one__add">
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas fringilla massa et tristique
+                      convallis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos
+                      himenaeos. Suspendisse orci sem, ultrices
+                    </p>
+                  </div>
+                  <a class="blog-one__reply" href="#">Reply</a>
+                </div>
+              </li>
+              <li class="blog-one__element blog-one__element--two">
+                <div class="blog-one__image">
+                  <img src="../images/content/w2.jpg" alt="avatar">
+                </div>
+                <div class="blog-one__box">
+                  <div class="blog-one__row">
+                    <div class="blog-one__nam">
+                      Shannon S. Williams
+                    </div>
+                    <time>Add 11 Oct 2020</time>
+                  </div>
+                  <div class="blog-one__text blog-one__add">
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas fringilla massa et tristique
+                      convallis. Class aptent
+                      taciti sociosqu ad litora torquent per conubia nostra
+                    </p>
+                  </div>
+                  <a class="blog-one__reply" href="#">Reply</a>
+                </div>
+              </li>
+              <li class="blog-one__element">
+                <div class="blog-one__image">
+                  <img src="../images/content/w3.jpg" alt="avatar">
+                </div>
+                <div class="blog-one__box">
+                  <div class="blog-one__row">
+                    <div class="blog-one__nam">
+                      Nicholas R. Coley
+                    </div>
+                    <time>Add 11 Oct 2020</time>
+                  </div>
+                  <div class="blog-one__text blog-one__add">
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas fringilla massa et tristique
+                      convallis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos
+                      himenaeos. Suspendisse orci sem, ultrices
+                    </p>
+                  </div>
+                  <a class="blog-one__reply" href="#">Reply</a>
+                </div>
+              </li>
+            </ul>
+            <div class="blog-one__title caption">
+              Leave A Comment
+            </div>
+            <form class="blog-one__form" action="#">
+              <label class="blog-one__label">
+                <input class="blog-one__input" type="text" placeholder="Name">
+                <input class="blog-one__input" type="text" placeholder="Email">
+              </label>
+              <textarea class="blog-one__textarea" placeholder="Comment"></textarea>
+              <button class="blog-one__btn" type="submit">post comment</button>
+            </form>
+          </div>
+          <div class="blog__filter">
+            <form class="blog__form" action="#">
+              <label class="blog__label">
+                <input type="text" class="blog__input">
+              </label>
+              <button class="blog__btn">
+                <svg class="blog__btn-svg">
+                  <use xlink:href="images/icon/sprite.svg#search-blog"></use>
+                </svg>
+              </button>
+            </form>
+            <div class="blog__filter-wrap">
+              @include('components/_filter-category.html')
+            </div>
+            @include('components/_blog__filter.html')
+          </div>
+        </div>
+      </div>
+      <div class="blog-partners">
+        <div class="container">
+          @include('components/_partners.html')
+        </div>
+      </div>
+    </section>
+  </main>
+  @include('components/_footer.html')
+
+  <script src="js/main.min.js"></script>
+</body>
+
+</html>

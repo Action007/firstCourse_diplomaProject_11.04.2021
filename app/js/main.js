@@ -19,9 +19,9 @@ $(function () {
   $('.button-grid').on('click', function () {
     $('.product__list').removeClass('active')
   })
-  
+
   $('.filter-btn').on('click', function () {
-    $('.filter-btn, .filter__inner').toggleClass('active');
+    $('.filter-btn, .filter__inner, .blog__filter').toggleClass('active');
     $('body').toggleClass('lock2');
   })
 

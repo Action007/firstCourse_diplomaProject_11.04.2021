@@ -285,12 +285,7 @@ button {
 
 .filter-category {
   &__items {
-    margin-bottom: 50px;
     @extend %rubik-400;
-
-    @include for-tablet-landscape-down {
-      max-width: 270px;
-    }
   }
 
   &__title {
@@ -300,6 +295,8 @@ button {
     font-size: 18px;
     margin-bottom: 28px;
     padding-right: 57px;
+    @extend %rubik-400;
+    color: #243f4d;
   }
 
   &__title::after {
@@ -313,7 +310,7 @@ button {
     background-color: $icon-bg;
   }
 
-  &__btn{
+  &__btn {
     display: block;
     max-width: 370px;
     text-align: left;

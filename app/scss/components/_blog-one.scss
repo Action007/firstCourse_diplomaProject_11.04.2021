@@ -1,0 +1,338 @@
+.blog-one {
+  &__wrapper {
+    @extend %rubik-400;
+  }
+
+  &__desc {
+    @extend %rubik-500;
+    margin-bottom: 20px;
+    line-height: 1.7;
+  }
+
+  &__text {
+    @extend %rubik-400;
+    line-height: 1.7;
+  }
+
+  &__text--one {
+    margin-bottom: 35px;
+  }
+
+  &__blockquote {
+    @extend %rubik-400;
+    padding: 21px 15px 22px 40px;
+    line-height: 1.7;
+    background-color: #edf1f4;
+    margin-bottom: 46px;
+    border-left: 6px solid $icon-bg;
+  }
+
+  &__slogan {
+    margin-bottom: 15px;
+    max-width: 695px;
+  }
+
+  &__author {
+    position: relative;
+    padding-left: 45px;
+  }
+
+  &__author::before {
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 3px;
+    background-color: $icon-bg;
+  }
+
+  &__wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 42px;
+    column-gap: 20px;
+
+    @include for-tablet-portrait-down {
+      flex-direction: column-reverse;
+    }
+  }
+
+  &__text-inner {
+    max-width: 470px;
+
+    @include for-tablet-portrait-down {
+      max-width: 650px;
+      margin-bottom: 40px;
+    }
+  }
+
+  &__subtitle {
+    display: block;
+    margin-bottom: 22px;
+    color: $fontcolor;
+    @extend %rubik-500;
+    font-size: 18px;
+  }
+
+  &__text--three {
+    margin-bottom: 60px;
+  }
+
+  &__person-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 24px 0 26px;
+    border: 2px solid #ebebeb;
+    border-left: none;
+    border-right: none;
+    margin-bottom: 60px;
+
+    @include for-phone-only {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }
+
+  &__person {
+    display: flex;
+    align-items: center;
+
+    @include for-tablet-portrait-down {
+      margin-bottom: 30px;
+    }
+  }
+
+  &__person-img {
+    margin-right: 26px;
+  }
+
+  &__name-inner {
+    display: flex;
+    flex-direction: column;
+
+    span {
+      color: #666;
+      @extend %rubik-400;
+    }
+  }
+
+  &__name {
+    margin-bottom: 12px;
+    font-size: 18px;
+    color: $icini;
+    @extend %rubik-500;
+  }
+
+  &__social-inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 60px;
+    margin-right: 20px;
+  }
+
+  &__social {
+    display: flex;
+    @extend %rubik-400;
+    color: #a1a1a1;
+  }
+
+  &__list {
+    display: flex;
+  }
+
+  &__item:not(:last-child) {
+    margin-right: 20px;
+  }
+
+  &__exrept {
+    margin-right: 25px;
+    color: $icini;
+  }
+
+  &__lead {
+    margin-right: 10px;
+    color: $icini;
+  }
+
+  &__icon {
+    width: 20px;
+    height: 20px;
+    fill: #a1a1a1;
+  }
+
+  &__caption {
+    margin-bottom: 55px;
+  }
+
+  &__element {
+    display: flex;
+    column-gap: 30px;
+    justify-content: space-between;
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+
+    @include for-miniphone-only {
+      column-gap: 15px;
+    }
+  }
+
+  &__element:first-child {
+    border-bottom: 1px solid #e0e0e0;
+  }
+
+  &__element--two {
+    max-width: 700px;
+    border-bottom: 1px solid #e0e0e0;
+    margin-left: auto;
+  }
+
+  &__image {
+    width: 100px;
+    height: 100px;
+
+    @include for-miniphone-only {
+      width: 50px;
+      height: 50px;
+    }
+
+    img {
+      max-width: initial;
+
+      @include for-miniphone-only {
+        height: 100%;
+      }
+    }
+  }
+
+  &__box {
+    max-width: 697px;
+  }
+
+  &__nam {
+    @extend %rubik-700;
+    color: $random-color;
+    margin-bottom: 23px;
+
+    @include for-miniphone-only {
+      margin-bottom: 5px;
+    }
+  }
+
+  &__add {
+    margin-bottom: 15px;
+  }
+
+  &__row {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+
+    @include for-miniphone-only {
+      flex-direction: column;
+      margin-bottom: 15px;
+    }
+
+    time,
+    span {
+      font-size: 14px;
+      @extend %rubik-400;
+    }
+  }
+
+  &__reply {
+    position: relative;
+    font-size: 14px;
+    @extend %rubik-400;
+    color: inherit;
+  }
+
+  &__reply::after {
+    position: absolute;
+    content: "";
+    background-image: url("../images/icon/reply.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    right: -25px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 15px;
+    height: 15px;
+  }
+
+  &__title {
+    margin-bottom: 43px;
+  }
+
+  &__label {
+    display: flex;
+    justify-content: space-between;
+    column-gap: 30px;
+    margin-bottom: 20px;
+
+    @include for-tablet-landscape-down {
+      column-gap: 15px;
+    }
+
+    @include for-tablet-landscape-down {
+      flex-direction: column;
+      row-gap: 10px;
+    }
+  }
+
+  &__input {
+    max-width: 800px;
+    width: 100%;
+    min-height: 50px;
+    border: 1px solid #e4e4e4;
+    outline-color: #a3bbc8;
+    padding: 0 50px 0 15px;
+    @extend %rubik-400;
+  }
+
+  &__textarea {
+    width: 100%;
+    min-height: 120px;
+    border: 1px solid #e4e4e4;
+    outline-color: #a3bbc8;
+    padding: 0 10px;
+    @extend %rubik-400;
+    resize: none;
+    margin-bottom: 40px;
+    padding: 16px 50px 0 15px;
+  }
+
+  &__textarea::placeholder,
+  &__input::placeholder {
+    padding-left: 5px;
+  }
+
+  &__btn {
+    padding: 17px 34px 16px 34px;
+    background-color: $icon-bg;
+    color: $white;
+    text-transform: uppercase;
+    font-size: 14px;
+    @extend %rubik-400;
+    transition: all 0.3s ease;
+    border: 1px solid transparent;
+  }
+
+  &__btn:hover {
+    color: $icon-bg;
+    background-color: $white;
+    border-color: $icon-bg;
+  }
+}
+
+.caption {
+  @extend %rubik-700;
+  color: $random-color;
+  font-size: 24px;
+}
