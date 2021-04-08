@@ -56,6 +56,8 @@ body.lock2 {
   transform: translateY(-50%);
   width: 22px;
   height: 9px;
+  fill: $white;
+  transition: all 0.3s ease;
 }
 
 .mixitup {
@@ -109,11 +111,6 @@ button {
   outline: transparent;
   cursor: pointer;
   background: none;
-}
-
-.arrow {
-  fill: $white;
-  transition: all 0.3s ease;
 }
 
 .search2 {

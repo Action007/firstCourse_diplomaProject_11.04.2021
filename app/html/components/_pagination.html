@@ -1,14 +1,8 @@
 <ul class="pagination">
-  <li class="pagination__item">
-    <a class="pagination__link" href="#">1</a>
-  </li>
-  <li class="pagination__item">
-    <a class="pagination__link" href="#">2</a>
-  </li>
-  <li class="pagination__item">
-    <a class="pagination__link" href="#">3</a>
-  </li>
-  <li class="pagination__item">
-    <a class="pagination__link" href="#">Next</a>
-  </li>
+  @loop('list/_pagi-link.html', [
+  {"pagi-link" : "1"},
+  {"pagi-link" : "2"},
+  {"pagi-link" : "3"},
+  {"pagi-link" : "Next"}
+  ])
 </ul>

@@ -6,25 +6,11 @@
         Chair
       </button>
     </li>
-    <li class="filter-category__item">
-      <button class="filter-category__btn" type="button">
-        Table
-      </button>
-    </li>
-    <li class="filter-category__item">
-      <button class="filter-category__btn" type="button">
-        Lamp
-      </button>
-    </li>
-    <li class="filter-category__item">
-      <button class="filter-category__btn" type="button">
-        Watch
-      </button>
-    </li>
-    <li class="filter-category__item">
-      <button class="filter-category__btn" type="button">
-        Clock
-      </button>
-    </li>
+    @loop('list/_category-button.html', [
+    {"category-btn" : "Table"},
+    {"category-btn" : "Lamp"},
+    {"category-btn" : "Watch"},
+    {"category-btn" : "Clock"}
+    ])
   </ul>
 </div>
