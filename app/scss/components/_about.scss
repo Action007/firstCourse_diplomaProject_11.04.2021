@@ -9,9 +9,11 @@
 
   &__inner {
     display: flex;
+    column-gap: 20px;
+    justify-content: space-between;
     margin-bottom: 120px;
 
-    @include for-desktop-down {
+    @include for-tablet-portrait-down {
       flex-direction: column;
       align-items: center;
       margin-bottom: 70px;
@@ -22,19 +24,20 @@
     display: flex;
     justify-content: center;
     flex-direction: column;
+    max-width: 550px;
 
-    @include for-desktop-down {
+    @include for-tablet-landscape-down {
       justify-content: center;
       margin-bottom: 50px;
     }
   }
 
-  &__img {
-    margin-right: 48px;
+  &__img-wrap {
+    min-height: 675px;
+    max-width: 570px;
 
     @include for-desktop-down {
       width: 50%;
-      margin-right: 0;
     }
 
     @include for-phone-only {
@@ -46,12 +49,18 @@
     }
   }
 
+  &__img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
+
   &__items {
     display: flex;
     align-items: center;
     margin-bottom: 18px;
 
-    @include for-desktop-down {
+    @include for-tablet-portrait-down {
       justify-content: center;
     }
 

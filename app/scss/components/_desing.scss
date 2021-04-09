@@ -1,6 +1,6 @@
 .desing {
   padding: 86px 0 388px;
-  
+
   &__title {
     margin-bottom: 25px;
     text-align: center;
@@ -23,22 +23,24 @@
     }
   }
 
-  &__item {
+  &__link {
     position: relative;
     overflow: hidden;
     max-width: 370px;
     height: 246px;
     width: 100%;
     background-color: #f8f8f8;
-    z-index: 1;
-  }
-
-  &__link {
     display: block;
-    max-width: 370px;
+    overflow: hidden;
+    z-index: 1;
+    transition: all .3s ease;
   }
 
-  &__item:hover {
+  &__item {
+    overflow: hidden;
+  }
+
+  &__link:hover {
     transform: scale(1.2);
   }
 

@@ -198,7 +198,7 @@
       left: 130px;
     }
   }
-  
+
   .menu-nav__link--point,
   .menu-nav__link--search {
     @include for-miniphone-only {
@@ -339,10 +339,12 @@
 }
 
 .logo {
-  max-width: 150px;
+  max-width: 175px;
+  min-height: 43px;
   z-index: 5;
 
-  &__img {
+  &__logo-img {
+    object-fit: contain;
     @include for-tablet-landscape-down {
       max-width: 70%;
     }

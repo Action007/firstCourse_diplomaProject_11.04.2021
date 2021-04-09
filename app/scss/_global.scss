@@ -152,10 +152,17 @@ button {
     opacity: 1;
   }
 
-  &__img {
-    object-fit: scale-down;
+  &__wrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     min-height: 205px;
     padding: 0 10px;
+    max-width: 250px;
+  }
+
+  &__img {
+    object-fit: scale-down;
   }
 
   &__element {
@@ -256,7 +263,7 @@ button {
       color: inherit;
     }
     a:hover {
-      color: blue;
+      color: #ff9777;
     }
   }
 
@@ -275,7 +282,16 @@ button {
 }
 
 .partners {
-  img {
+  &__logo-size {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 167px;
+    min-height: 84px;
+  }
+
+  &__logo {
+    object-fit: contain;
     margin: 0 auto;
   }
 }

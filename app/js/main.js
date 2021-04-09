@@ -50,13 +50,16 @@ $(function () {
     onChange: function (data) {
       $(".filter__from").text(data.from);
       $(".filter__to").text(data.to);
-    }
+    },
+    onFinish: function (data) {
+      console.log(data.to);
+    },
   })
 
   $('.partners').slick({
     slidesToShow: 5,
     slidesToScroll: 1,
-    autoplay: true,
+    // autoplay: true,
     autoplaySpeed: 2000,
     arrows: false,
     responsive: [

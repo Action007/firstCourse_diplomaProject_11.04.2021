@@ -40,92 +40,38 @@
               <div class="filter__items filter__items--three">
                 <h3 class="filter__title filter__title--three">brand</h3>
                 <ul class="filter__list">
-                  <li class="filter__item">
-                    <form class="filter__form-inner">
-                      <input class="filter__checkbox" type="checkbox" checked id="input1">
-                      <label class="filter__button" for="input1">
-                        RFL
-                        <span class="filter__num">(10)</span>
-                      </label>
-                    </form>
-                  </li>
-                  <li class="filter__item">
-                    <form class="filter__form-inner">
-                      <input class="filter__checkbox" type="checkbox" id="input2">
-                      <label class="filter__button" for="input2">
-                        Brothers
-                        <span class="filter__num">(10)</span>
-                      </label>
-                    </form>
-                  </li>
-                  <li class="filter__item">
-                    <form class="filter__form-inner">
-                      <input class="filter__checkbox" type="checkbox" id="input3">
-                      <label class="filter__button" for="input3">
-                        Regal
-                        <span class="filter__num">(10)</span>
-                      </label>
-                    </form>
-                  </li>
-                  <li class="filter__item">
-                    <form class="filter__form-inner">
-                      <input class="filter__checkbox" type="checkbox" id="input4">
-                      <label class="filter__button" for="input4">
-                        Nadia
-                        <span class="filter__num">(10)</span>
-                      </label>
-                    </form>
-                  </li>
-                  <li class="filter__item">
-                    <form class="filter__form-inner">
-                      <input class="filter__checkbox" type="checkbox" id="input5">
-                      <label class="filter__button" for="input5">
-                        Otobi
-                        <span class="filter__num">(10)</span>
-                      </label>
-                    </form>
-                  </li>
+                  @loop('components/list/_filterlist.html', [
+                  {"check" : "checked",
+                  "inputnum" : "input1",
+                  "filter.txt" : "RFL",
+                  "filternum" : "(10)"},
+                  {"check" : "",
+                  "inputnum" : "input2",
+                  "filter.txt" : "Brothers",
+                  "filternum" : "(21)"},
+                  {"check" : "",
+                  "inputnum" : "input3",
+                  "filter.txt" : "Regal",
+                  "filternum" : "(3)"},
+                  {"check" : "",
+                  "inputnum" : "input4",
+                  "filter.txt" : "Nadia",
+                  "filternum" : "(14)"},
+                  {"check" : "",
+                  "inputnum" : "input5",
+                  "filter.txt" : "Otobi",
+                  "filternum" : "(6)"}
+                  ])
                 </ul>
               </div>
               <div class="filter__items filter__items--last">
                 <h3 class="filter__title filter__title--last">recent products</h3>
                 <ul class="filter__list">
-                  <li class="filter__li">
-                    <a href="#">
-                      <img class="filter__img" src="images/content/nightlight1.png" alt="night light">
-                    </a>
-                    <div class="filter__wrap">
-                      <h4>
-                        <a class="filter__link" href="#">Pendant lamp</a>
-                      </h4>
-                      <div class="star" data-rateyo-rating="4"></div>
-                      <span>23$</span>
-                    </div>
-                  </li>
-                  <li class="filter__li filter__li--two">
-                    <a href="#">
-                      <img class="filter__img" src="images/content/nightlight2.png" alt="night light">
-                    </a>
-                    <div class="filter__wrap">
-                      <h4>
-                        <a class="filter__link" href="#">Pendant lamp</a>
-                      </h4>
-                      <div class="star" data-rateyo-rating="4"></div>
-                      <span>23$</span>
-                    </div>
-                  </li>
-                  <li class="filter__li filter__li--last">
-                    <a href="#">
-                      <img class="filter__img" src="images/content/nightlight3.png" alt="night light">
-                    </a>
-                    <div class="filter__wrap">
-                      <h4>
-                        <a class="filter__link" href="#">Pendant lamp</a>
-                      </h4>
-                      <div class="star" data-rateyo-rating="4"></div>
-                      <span>23$</span>
-                    </div>
-                  </li>
+                  @loop('components/list/_filter__li.html',[
+                  {"photo" : "nightlight1"},
+                  {"photo" : "nightlight2"},
+                  {"photo" : "nightlight3"}
+                  ])
                 </ul>
               </div>
             </div>
@@ -135,7 +81,7 @@
               <div class="product__filter-inner">
                 <span>View</span>
                 <button class="product__filter-btn product__filter-btn--active button-grid">
-                  <span class="sr-only">Normal view</span>
+                  <span class="sr-only">Grid view</span>
                   <svg class="product__filter-svg">
                     <use xlink:href="images/icon/sprite.svg#grid"></use>
                   </svg>

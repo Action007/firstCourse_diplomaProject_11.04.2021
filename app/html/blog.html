@@ -16,15 +16,10 @@
       <div class="container">
         <div class="blog__inner">
           <div class="blog__items-inner">
-            <button class="filter-btn" type="button">
-              Filter
-              <svg class="filter-btn__svg">
-                <use xlink:href="images/icon/sprite.svg#18819658861556283886"></use>
-              </svg>
-            </button>
+            @include('components/_filter-btn.html')
             <ul class="blog__items">
               <li class="blog__item">
-                @loop('components/_blogitem.html', [
+                @loop('./components/_blogitem.html', [
                 {"blog__img" : "room--big1.jpg",
                   "blog__title" : "Fonsectetur adipisicing eiusmod",
                   "blog__text" : "consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut alLorem ipsum dolor sit amet, consectetur adipisicing elit,sed do eiusmod tempor incididunt ut labore et dolore magna"},

@@ -78,8 +78,14 @@
   }
 
   &__logo {
+    max-width: 155px;
+    min-height: 43px;
     display: inline-block;
     margin-bottom: 18px;
+  }
+
+  &__logo-img {
+    object-fit: contain;
   }
 
   &__address {

@@ -17,19 +17,19 @@
         <div class="blog__inner">
           <div class="blog__items-inner">
             @include('components/_filter-btn.html')
-            <a class="blog__img-inner" href="#">
+            <div class="blog__img-inner">
               <img class="blog__img" src="../images/content/room--big1.jpg" alt="Furniture with gray flowers">
-            </a>
+            </div>
             <div class="blog__wrap">
-              <time class="blog__time">
+              <time class="blog__time" datetime="28-01-2020">
                 28 janvar,2020
               </time>
               <span class="blog__admin">by admin</span>
             </div>
             <div class="blog-one__wrapper">
-              <span class="blog__title">
+              <h2 class="blog__title">
                 Fonsectetur adipisicing eiusmod
-              </span>
+              </h2>
               <div class="blog-one__desc">
                 <p>
                   Sdipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
@@ -66,9 +66,9 @@
             <div class="blog-one__wrap">
               <img src="../images/content/007.jpg" alt="Furniture with blue flowers">
               <div class="blog-one__text-inner">
-                <span class="blog-one__subtitle">
+                <h3 class="blog-one__subtitle">
                   Riusmod tempor incididunt
-                </span>
+                </h3>
                 <div class="blog-one__text blog-one__text--two">
                   <p>
                     consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
@@ -78,9 +78,9 @@
                 </div>
               </div>
             </div>
-            <div class="blog-one__subtitle">
+            <h3 class="blog-one__subtitle">
               Kajtsal jervcm eoaspckred
-            </div>
+            </h3>
             <div class="blog-one__text blog-one__text--three">
               <p>
                 consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
@@ -105,14 +105,17 @@
               <div class="blog-one__social-inner">
                 <div class="blog-one__social">
                   <span class="blog-one__exrept">Tags:</span>
-                  <span>All,Trending</span>
+                  <ul class="blog-one__social-list">
+                    <li>All,</li>
+                    <li>Trending</li>
+                  </ul>
                 </div>
                 <div class="blog-one__social">
                   <span class="blog-one__lead">Share:</span>
                   <ul class="blog-one__list">
                     <li class="blog-one__item">
                       <a href="#">
-                        <span class="sr-only">Click to open Facebook</span>
+                        <span class="sr-only">Facebook</span>
                         <svg class="blog-one__icon">
                           <use xlink:href="images/icon/sprite.svg#facebook"></use>
                         </svg>
@@ -120,7 +123,7 @@
                     </li>
                     <li class="blog-one__item">
                       <a href="#">
-                        <span class="sr-only">Click to open Twitter</span>
+                        <span class="sr-only">Twitter</span>
                         <svg class="blog-one__icon">
                           <use xlink:href="images/icon/sprite.svg#twitter"></use>
                         </svg>
@@ -128,7 +131,7 @@
                     </li>
                     <li class="blog-one__item">
                       <a href="#">
-                        <span class="sr-only">Click to open Instagram</span>
+                        <span class="sr-only">Instagram</span>
                         <svg class="blog-one__icon">
                           <use xlink:href="images/icon/sprite.svg#instagram"></use>
                         </svg>
@@ -150,6 +153,20 @@
               3 Comments
             </div>
             <ul class="blog-one__items">
+              <!-- 
+                НЕ ЗНАЮ КАК ИСПОЛЬЗОВАТЬ IF
+
+              @loop('components/list/_blog-coments.html', [
+              {"human" : "rowling",
+              "author" : "Delores G. Roberts",
+              "comment" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas fringilla massa et tristique convallis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Suspendisse orci sem, ultrices"},
+              {"human" : "w2",
+              "author" : "Shannon S. Williams",
+              "comment" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas fringilla massa et tristique convallis. Class aptent taciti sociosqu ad litora torquent per conubia nostra"},
+              {"human" : "w3",
+              "author" : "Nicholas R. Coley",
+              "comment" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas fringilla massa et tristique convallis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Suspendisse orci sem, ultrices"}
+              ]) -->
               <li class="blog-one__element">
                 <div class="blog-one__image">
                   <img src="../images/content/rowling.jpg" alt="Joanne Rowling">
@@ -159,7 +176,7 @@
                     <div class="blog-one__nam">
                       Delores G. Roberts
                     </div>
-                    <time>Add 11 Oct 2020</time>
+                    <time datetime="2020-10-11">Add 11 Oct 2020</time>
                   </div>
                   <div class="blog-one__text blog-one__add">
                     <p>
@@ -168,10 +185,10 @@
                       himenaeos. Suspendisse orci sem, ultrices
                     </p>
                   </div>
-                  <a class="blog-one__reply" href="#">Reply</a>
+                  <button class="blog-one__reply" href="#" type="button">Reply</button>
                 </div>
               </li>
-              <li class="blog-one__element blog-one__element--two">
+              <li class="blog-one__element blog-one__element--reply">
                 <div class="blog-one__image">
                   <img src="../images/content/w2.jpg" alt="avatar">
                 </div>
@@ -180,7 +197,7 @@
                     <div class="blog-one__nam">
                       Shannon S. Williams
                     </div>
-                    <time>Add 11 Oct 2020</time>
+                    <time datetime="2020-10-11">Add 11 Oct 2020</time>
                   </div>
                   <div class="blog-one__text blog-one__add">
                     <p>
@@ -189,7 +206,7 @@
                       taciti sociosqu ad litora torquent per conubia nostra
                     </p>
                   </div>
-                  <a class="blog-one__reply" href="#">Reply</a>
+                  <button class="blog-one__reply" href="#" type="button">Reply</button>
                 </div>
               </li>
               <li class="blog-one__element">
@@ -201,7 +218,7 @@
                     <div class="blog-one__nam">
                       Nicholas R. Coley
                     </div>
-                    <time>Add 11 Oct 2020</time>
+                    <time  datetime="2020-10-11">Add 11 Oct 2020</time>
                   </div>
                   <div class="blog-one__text blog-one__add">
                     <p>
@@ -210,7 +227,7 @@
                       himenaeos. Suspendisse orci sem, ultrices
                     </p>
                   </div>
-                  <a class="blog-one__reply" href="#">Reply</a>
+                  <button class="blog-one__reply" type="button" href="#">Reply</button>
                 </div>
               </li>
             </ul>
@@ -220,23 +237,18 @@
             <form class="blog-one__form" action="#">
               <label class="blog-one__label">
                 <input class="blog-one__input" type="text" placeholder="Name">
-                <input class="blog-one__input" type="text" placeholder="Email">
               </label>
-              <textarea class="blog-one__textarea" placeholder="Comment"></textarea>
+              <label>
+                <input class="blog-one__input" type="email" placeholder="Email">
+              </label>
+              <label>
+                <textarea class="blog-one__textarea" placeholder="Comment"></textarea>
+              </label>
               <button class="blog-one__btn" type="submit">post comment</button>
             </form>
           </div>
           <div class="blog__filter">
-            <form class="blog__form" action="#">
-              <label class="blog__label">
-                <input type="text" class="blog__input">
-              </label>
-              <button class="blog__btn">
-                <svg class="blog__btn-svg">
-                  <use xlink:href="images/icon/sprite.svg#search-blog"></use>
-                </svg>
-              </button>
-            </form>
+            @include('components/_search-form.html')
             <div class="blog__filter-wrap">
               @include('components/_filter-category.html')
             </div>

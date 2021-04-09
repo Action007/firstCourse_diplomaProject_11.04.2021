@@ -121,35 +121,9 @@
         <h2 class="title goods__title">
           Products of the week
         </h2>
-
-        <ul class="mixitup">
-          <li class="mixitup__button">
-            <button class="mixitup__btn filter1" type="button" data-filter="all">
-              All
-            </button>
-          </li>
-          <li class="mixitup__button">
-            <button class="mixitup__btn filter1" type="button" data-filter=".category-a">
-              Furnitures
-            </button>
-          </li>
-          <li class="mixitup__button">
-            <button class="mixitup__btn filter1" type="button" data-filter=".category-b">
-              Chairs
-            </button>
-          </li>
-          <li class="mixitup__button">
-            <button class="mixitup__btn filter1" type="button" data-filter=".category-c">
-              Lighting
-            </button>
-          </li>
-          <li class="mixitup__button">
-            <button class="mixitup__btn filter1" type="button" data-filter=".category-d">
-              Decor
-            </button>
-          </li>
-        </ul>
-
+        @include('components/_mixitup-btn.html',{
+        "mixfilter" : "filter1"
+        })
         <ul class="goods__items">
           <li class="goods__item mix category-a">
             @include('components/_product-card.html',{
@@ -246,85 +220,37 @@
       <div class="container">
         <h2 class="title desing__title">New Design</h2>
 
-        <ul class="mixitup">
-          <li class="mixitup__button">
-            <button class="mixitup__btn filter2" type="button" data-filter="all">All</button>
-          </li>
-          <li class="mixitup__button">
-            <button class="mixitup__btn filter2" type="button" data-filter=".category-e">Furnitures</button>
-          </li>
-          <li class="mixitup__button">
-            <button class="mixitup__btn filter2" type="button" data-filter=".category-f">Chairs</button>
-          </li>
-          <li class="mixitup__button">
-            <button class="mixitup__btn filter2" type="button" data-filter=".category-g">Lighting</button>
-          </li>
-          <li class="mixitup__button">
-            <button class="mixitup__btn filter2" type="button" data-filter=".category-h">Decor</button>
-          </li>
-        </ul>
+        @include('components/_mixitup-btn.html',{
+        "mixfilter" : "filter2"
+        })
 
         <ul class="desing__list">
-          <li class="desing__item mix category-e">
-            <a class="desing__link" href="#">
-              <h3 class="desing__subtitle">
-                Beat Flat Pendant Black
-              </h3>
-              <span class="desing__text">Classic</span>
-              <img class="desing__img" src="images/content/sofa1.png" alt="Beat Flat Pendant
-                Black">
-            </a>
-          </li>
-          <li class="desing__item mix category-e">
-            <a class="desing__link" href="#">
-              <h3 class="desing__subtitle">
-                Lampe Sur Pieds Bamboo
-              </h3>
-              <span class="desing__text">Classic</span>
-              <img class="desing__img" src="images/content/bed.png" alt="Lampe Sur Pieds
-                Bamboo">
-            </a>
-          </li>
-          <li class="desing__item mix category-f">
-            <a class="desing__link" href="#">
-              <h3 class="desing__subtitle">
-                Rattan Rocking Chair
-              </h3>
-              <span class="desing__text">Classic</span>
-              <img class="desing__img" src="images/content/armchair9.png" alt="Rattan Rocking
-                Chair">
-            </a>
-          </li>
-          <li class="desing__item mix category-f">
-            <a class="desing__link" href="#">
-              <h3 class="desing__subtitle">
-                Rattan Rocking Chair
-              </h3>
-              <span class="desing__text">Classic</span>
-              <img class="desing__img" src="images/content/bed2.png" alt="Rattan Rocking
-                Chair">
-            </a>
-          </li>
-          <li class="desing__item mix category-g">
-            <a class="desing__link" href="#">
-              <h3 class="desing__subtitle">
-                Rattan Rocking Chair
-              </h3>
-              <span class="desing__text">Classic</span>
-              <img class="desing__img desing__img--arm" src="images/content/armchair10.png" alt="Rattan Rocking
-                Chair">
-            </a>
-          </li>
-          <li class="desing__item mix category-h">
-            <a class="desing__link" href="#">
-              <h3 class="desing__subtitle">
-                Lampe Sur Pieds Bamboo
-              </h3>
-              <span class="desing__text">Classic</span>
-              <img class="desing__img" src="images/content/sofa2.png" alt="Lampe Sur Pieds
-                Bamboo">
-            </a>
-          </li>
+          @loop('components/list/_desing__li.html', [
+          {"mixcategory" : "category-a",
+          "desing.txt" : "Beat Flat Pendant Black",
+          "images" : "sofa1",
+          "alt" : "Beat Flat Pendant Black"},
+          {"mixcategory" : "category-a",
+          "desing.txt" : "Lampe Sur Pieds Bamboo",
+          "images" : "bed",
+          "alt" : "Lampe Sur Pieds Bamboo"},
+          {"mixcategory" : "category-b",
+          "desing.txt" : "Rattan Rocking Chair",
+          "images" : "armchair9",
+          "alt" : "Rattan Rocking Chair"},
+          {"mixcategory" : "category-b",
+          "desing.txt" : "Rattan Rocking Chair",
+          "images" : "bed2",
+          "alt" : "Rattan Rocking Chair"},
+          {"mixcategory" : "category-c",
+          "desing.txt" : "Rattan Rocking Chair",
+          "images" : "armchair10",
+          "alt" : "Rattan Rocking Chair"},
+          {"mixcategory" : "category-d",
+          "desing.txt" : "Lampe Sur Pieds Bamboo",
+          "images" : "sofa2",
+          "alt" : "Lampe Sur Pieds Bamboo"}
+          ])
         </ul>
       </div>
       <a class="popup__link" data-fancybox href="https://www.youtube.com/watch?v=iik25wqIuFo"
