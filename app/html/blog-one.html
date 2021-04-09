@@ -7,7 +7,7 @@
 
   <main class="main">
     @include('components/_breadcrumbs.html',{
-    "title" : "Product Review",
+    "title" : "Blog Details",
     "subtitle1" : "Home",
     "subtitle2" : "Blog"
     })
@@ -16,15 +16,17 @@
       <div class="container">
         <div class="blog__inner">
           <div class="blog__items-inner">
-            @include('components/_filter-btn.html')
+            <div class="blog__filter-inner">
+              @include('components/_filter-btn.html')
+            </div>
             <div class="blog__img-inner">
               <img class="blog__img" src="../images/content/room--big1.jpg" alt="Furniture with gray flowers">
-            </div>
-            <div class="blog__wrap">
-              <time class="blog__time" datetime="28-01-2020">
-                28 janvar,2020
-              </time>
-              <span class="blog__admin">by admin</span>
+              <div class="blog__wrap">
+                <time class="blog__time" datetime="28-01-2020">
+                  28 janvar,2020
+                </time>
+                <span class="blog__admin">by admin</span>
+              </div>
             </div>
             <div class="blog-one__wrapper">
               <h2 class="blog__title">
@@ -64,7 +66,9 @@
               </span>
             </blockquote>
             <div class="blog-one__wrap">
-              <img src="../images/content/007.jpg" alt="Furniture with blue flowers">
+              <div class="blog-one__img">
+                <img src="../images/content/007.jpg" alt="Furniture with blue flowers">
+              </div>
               <div class="blog-one__text-inner">
                 <h3 class="blog-one__subtitle">
                   Riusmod tempor incididunt
@@ -192,7 +196,7 @@
                 <div class="blog-one__image">
                   <img src="../images/content/w2.jpg" alt="avatar">
                 </div>
-                <div class="blog-one__box">
+                <div class="blog-one__box blog-one__box--reply">
                   <div class="blog-one__row">
                     <div class="blog-one__nam">
                       Shannon S. Williams
@@ -218,7 +222,7 @@
                     <div class="blog-one__nam">
                       Nicholas R. Coley
                     </div>
-                    <time  datetime="2020-10-11">Add 11 Oct 2020</time>
+                    <time datetime="2020-10-11">Add 11 Oct 2020</time>
                   </div>
                   <div class="blog-one__text blog-one__add">
                     <p>
@@ -235,25 +239,21 @@
               Leave A Comment
             </div>
             <form class="blog-one__form" action="#">
-              <label class="blog-one__label">
-                <input class="blog-one__input" type="text" placeholder="Name">
-              </label>
-              <label>
-                <input class="blog-one__input" type="email" placeholder="Email">
-              </label>
+              <div class="blog-one__inner">
+                <label class="blog-one__label">
+                  <input class="blog-one__input" type="text" placeholder="Name">
+                </label>
+                <label class="blog-one__label">
+                  <input class="blog-one__input" type="email" placeholder="Email">
+                </label>
+              </div>
               <label>
                 <textarea class="blog-one__textarea" placeholder="Comment"></textarea>
               </label>
               <button class="blog-one__btn" type="submit">post comment</button>
             </form>
           </div>
-          <div class="blog__filter">
-            @include('components/_search-form.html')
-            <div class="blog__filter-wrap">
-              @include('components/_filter-category.html')
-            </div>
-            @include('components/_blog__filter.html')
-          </div>
+          @include('components/_blogfilter.html')
         </div>
       </div>
       <div class="blog-partners">

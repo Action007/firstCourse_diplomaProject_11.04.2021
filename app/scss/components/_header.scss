@@ -342,11 +342,12 @@
   max-width: 175px;
   min-height: 43px;
   z-index: 5;
+  
+  @include for-tablet-landscape-down {
+    max-width: 130px;
+  }
 
   &__logo-img {
     object-fit: contain;
-    @include for-tablet-landscape-down {
-      max-width: 70%;
-    }
   }
 }

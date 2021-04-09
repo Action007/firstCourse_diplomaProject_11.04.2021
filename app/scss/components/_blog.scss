@@ -1,5 +1,9 @@
 .blog {
-  padding: 120px 0;
+  padding-top: 120px;
+
+  @include for-desktop-down {
+    padding-top: 50px;
+  }
 
   @include for-tablet-landscape-down {
     padding: 40px 0;
@@ -26,19 +30,50 @@
   }
 
   &__item {
-    margin-bottom: 50px;
+    margin-bottom: 48px;
   }
 
   &__item:last-child {
     margin-bottom: 75px;
   }
 
+  &__filter-inner {
+    display: none;
+
+    @include for-tablet-landscape-down {
+      display: block;
+      margin-bottom: 30px;
+    }
+  }
+  
+  &__img-inner {
+    position: relative;
+    margin-bottom: 36px;
+    max-width: 830px;
+    height: 500px;
+
+    @include for-tablet-landscape-down {
+      height: 450px;
+    }
+
+    @include for-phone-only {
+      height: 350px;
+    }
+
+    @include for-miniphone-only {
+      height: 250px;
+    }
+  }
+
   &__wrap {
+    position: absolute;
+    bottom: 0;
+    left: 0;
     display: flex;
     justify-content: center;
     align-items: center;
-    transform: translateY(-70px);
     max-width: 275px;
+    width: 100%;
     min-height: 70px;
     background-color: #a3bbc8;
     color: $white;
@@ -46,14 +81,9 @@
     font-size: 12px;
     @extend %rubik-400;
 
-    @include for-tablet-landscape-down {
-      transform: translateY(-40px);
-    }
-
     @include for-miniphone-only {
       min-height: 40px;
       max-width: 260px;
-      transform: translatey(-10px);
     }
   }
 
@@ -74,16 +104,6 @@
       .arrow-blog {
         fill: $white;
       }
-    }
-  }
-
-  &__img-inner {
-    display: block;
-    max-width: 830px;
-    height: 500px;
-
-    @include for-tablet-landscape-down {
-      transform: translateY(30px);
     }
   }
 
@@ -109,37 +129,32 @@
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
+    height: 20px;
+    width: 20px;
+    left: -25px;
+    top: 50%;
+    transform: translateY(-50%);
   }
 
   &__time::before {
     background-image: url("../images/icon/calendar2.svg");
-    height: 20px;
-    width: 20px;
-    left: -25px;
-    top: 50%;
-    transform: translateY(-50%);
   }
 
   &__admin::before {
     background-image: url("../images/icon/user2.svg");
-    height: 20px;
-    width: 20px;
-    left: -25px;
-    top: 50%;
-    transform: translateY(-50%);
   }
 
   &__wrapper {
     @extend %rubik-400;
-    transform: translateY(-33px);
   }
 
   &__title {
     display: block;
     color: $icini;
     font-size: 36px;
-    margin-bottom: 25px;
+    margin-bottom: 18px;
     @extend %rubik-400;
+    @include line-clamp2;
 
     @include for-miniphone-only {
       font-size: 30px;
@@ -150,7 +165,8 @@
     max-width: 830px;
     color: $icini;
     line-height: 1.9;
-    margin-bottom: 35px;
+    margin-bottom: 30px;
+    @include line-clamp;
 
     @include for-miniphone-only {
       font-size: 18px;
@@ -159,6 +175,7 @@
 
   &__filter {
     max-width: 270px;
+    width: 100%;
 
     @include for-tablet-landscape-down {
       position: fixed;
@@ -198,6 +215,10 @@
     }
   }
 
+  &__sift {
+    width: 100%;
+  }
+
   &__form {
     display: flex;
     align-items: center;
@@ -231,7 +252,7 @@
     border-right: none;
     margin-right: -5px;
     border-radius: 5px 0px 0px 5px;
-    max-width: 222px;
+    width: 100%;
     display: inline-block;
     height: 100%;
     outline-color: #a3bbc8;
@@ -271,7 +292,7 @@
 
   &__li {
     @extend %rubik-400;
-    margin-bottom: 30px;
+    margin-bottom: 24px;
     display: flex;
     column-gap: 20px;
 
@@ -280,11 +301,11 @@
       color: #333;
       margin-bottom: 8px;
       max-width: 180px;
+      @include line-clamp2;
     }
 
     time {
       text-transform: uppercase;
-      font-size: 12px;
       color: #9a9a9a;
     }
   }

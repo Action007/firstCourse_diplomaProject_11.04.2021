@@ -87,7 +87,7 @@
   <main class="main">
     <section class="breadcrumbs">
   <div class="breadcrumbs__wrapper">
-    <h1 class="breadcrumbs__title title">Product Review</h1>
+    <h1 class="breadcrumbs__title title">Blog Details</h1>
     <ul class="breadcrumbs__subtitle">
       <li class="breadcrumbs__item">
         <a class="breadcrumbs__link" href="#">Home</a>
@@ -103,20 +103,22 @@
       <div class="container">
         <div class="blog__inner">
           <div class="blog__items-inner">
-            <button class="filter-btn" type="button">
+            <div class="blog__filter-inner">
+              <button class="filter-btn" type="button">
   Filter
   <svg class="filter-btn__svg">
     <use xlink:href="images/icon/sprite.svg#18819658861556283886"></use>
   </svg>
 </button>
+            </div>
             <div class="blog__img-inner">
               <img class="blog__img" src="../images/content/room--big1.jpg" alt="Furniture with gray flowers">
-            </div>
-            <div class="blog__wrap">
-              <time class="blog__time" datetime="28-01-2020">
-                28 janvar,2020
-              </time>
-              <span class="blog__admin">by admin</span>
+              <div class="blog__wrap">
+                <time class="blog__time" datetime="28-01-2020">
+                  28 janvar,2020
+                </time>
+                <span class="blog__admin">by admin</span>
+              </div>
             </div>
             <div class="blog-one__wrapper">
               <h2 class="blog__title">
@@ -156,7 +158,9 @@
               </span>
             </blockquote>
             <div class="blog-one__wrap">
-              <img src="../images/content/007.jpg" alt="Furniture with blue flowers">
+              <div class="blog-one__img">
+                <img src="../images/content/007.jpg" alt="Furniture with blue flowers">
+              </div>
               <div class="blog-one__text-inner">
                 <h3 class="blog-one__subtitle">
                   Riusmod tempor incididunt
@@ -328,7 +332,7 @@
                 <div class="blog-one__image">
                   <img src="../images/content/w2.jpg" alt="avatar">
                 </div>
-                <div class="blog-one__box">
+                <div class="blog-one__box blog-one__box--reply">
                   <div class="blog-one__row">
                     <div class="blog-one__nam">
                       Shannon S. Williams
@@ -354,7 +358,7 @@
                     <div class="blog-one__nam">
                       Nicholas R. Coley
                     </div>
-                    <time  datetime="2020-10-11">Add 11 Oct 2020</time>
+                    <time datetime="2020-10-11">Add 11 Oct 2020</time>
                   </div>
                   <div class="blog-one__text blog-one__add">
                     <p>
@@ -371,12 +375,14 @@
               Leave A Comment
             </div>
             <form class="blog-one__form" action="#">
-              <label class="blog-one__label">
-                <input class="blog-one__input" type="text" placeholder="Name">
-              </label>
-              <label>
-                <input class="blog-one__input" type="email" placeholder="Email">
-              </label>
+              <div class="blog-one__inner">
+                <label class="blog-one__label">
+                  <input class="blog-one__input" type="text" placeholder="Name">
+                </label>
+                <label class="blog-one__label">
+                  <input class="blog-one__input" type="email" placeholder="Email">
+                </label>
+              </div>
               <label>
                 <textarea class="blog-one__textarea" placeholder="Comment"></textarea>
               </label>
@@ -384,19 +390,19 @@
             </form>
           </div>
           <div class="blog__filter">
-            <form class="blog__form" action="#">
-  <label class="blog__label">
-    <input class="blog__input" type="text">
-  </label>
-  <button class="blog__btn" type="submit">
-    <span class="sr-only">click to search</span>
-    <svg class="blog__btn-svg">
-      <use xlink:href="images/icon/sprite.svg#search-blog"></use>
-    </svg>
-  </button>
-</form>
-            <div class="blog__filter-wrap">
-              <div class="filter-category__items">
+  <form class="blog__form" action="#">
+    <label class="blog__label">
+      <input class="blog__input" type="text">
+    </label>
+    <button class="blog__btn">
+      <span class="sr-only">search product</span>
+      <svg class="blog__btn-svg">
+        <use xlink:href="images/icon/sprite.svg#search-blog"></use>
+      </svg>
+    </button>
+  </form>
+  <div class="blog__filter-wrap">
+    <div class="filter-category__items">
   <h3 class="filter-category__title">category</h3>
   <ul class="filter-category__list">
     <li class="filter-category__item">
@@ -423,8 +429,8 @@
 </li>
   </ul>
 </div>
-            </div>
-            <div class="blog__sift">
+  </div>
+  <div class="blog__sift">
   <h3 class="blog__subtitle">recent post</h3>
   <ul class="blog__list">
     <li class="blog__li">
@@ -478,7 +484,7 @@
 </li>
   </ul>
 </div>
-          </div>
+</div>
         </div>
       </div>
       <div class="blog-partners">

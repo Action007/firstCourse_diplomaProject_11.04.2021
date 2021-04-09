@@ -16,43 +16,28 @@
       <div class="container">
         <div class="blog__inner">
           <div class="blog__items-inner">
-            @include('components/_filter-btn.html')
+            <div class="blog__filter-inner">
+              @include('components/_filter-btn.html')
+            </div>
             <ul class="blog__items">
-              <li class="blog__item">
                 @loop('./components/_blogitem.html', [
                 {"blog__img" : "room--big1.jpg",
                   "blog__title" : "Fonsectetur adipisicing eiusmod",
                   "blog__text" : "consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut alLorem ipsum dolor sit amet, consectetur adipisicing elit,sed do eiusmod tempor incididunt ut labore et dolore magna"},
                 {"blog__img" : "room--big2.jpg",
-                  "blog__title" : "Fonsectetur adipisicing eiusmod",
+                  "blog__title" : "Fonsectetur adipisicing elit,",
                   "blog__text" : "consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut alLorem ipsum dolor sit amet, consectetur adipisicing elit,sed do eiusmod tempor incididunt ut labore et dolore magna"},
                 {"blog__img" : "room--big3.jpg",
-                  "blog__title" : "Fonsectetur adipisicing eiusmod",
+                  "blog__title" : "Fsectetur adipisicing tempor incididunt",
                   "blog__text" : "consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut alLorem ipsum dolor sit amet, consectetur adipisicing elit,sed do eiusmod tempor incididunt ut labore et dolore magna"},
                 {"blog__img" : "room--big4.jpg",
-                  "blog__title" : "Fonsectetur adipisicing eiusmod",
+                  "blog__title" : "vonsectetur adipisicing elit",
                   "blog__text" : "consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut alLorem ipsum dolor sit amet, consectetur adipisicing elit,sed do eiusmod tempor incididunt ut labore et dolore magna"},
                 ])
             </ul>
             @include('components/_pagination.html')
           </div>
-          <div class="blog__filter">
-            <form class="blog__form" action="#">
-              <label class="blog__label">
-                <input class="blog__input" type="text">
-              </label>
-              <button class="blog__btn">
-                <span class="sr-only">search product</span>
-                <svg class="blog__btn-svg">
-                  <use xlink:href="images/icon/sprite.svg#search-blog"></use>
-                </svg>
-              </button>
-            </form>
-            <div class="blog__filter-wrap">
-              @include('components/_filter-category.html')
-            </div>
-            @include('components/_blog__filter.html')
-          </div>
+            @include('components/_blogfilter.html')
         </div>
       </div>
       <div class="blog-partners">

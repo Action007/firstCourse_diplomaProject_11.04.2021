@@ -1,5 +1,5 @@
 .desing {
-  padding: 86px 0 388px;
+  padding-bottom: 388px;
 
   &__title {
     margin-bottom: 25px;
@@ -15,7 +15,6 @@
 
     @include for-desktop-down {
       grid-template-columns: repeat(2, 1fr);
-      justify-items: center;
     }
 
     @include for-phone-only {
@@ -33,11 +32,20 @@
     display: block;
     overflow: hidden;
     z-index: 1;
-    transition: all .3s ease;
+    transition: all 0.3s ease;
+
+    @include for-desktop-down {
+      max-width: 450px;
+    }
   }
 
   &__item {
     overflow: hidden;
+
+    @include for-desktop-down {
+      display: flex;
+      justify-content: center;
+    }
   }
 
   &__link:hover {
@@ -51,6 +59,7 @@
     line-height: 1.2;
     font-size: 20px;
     @extend %rubik-400;
+    @include line-clamp2;
   }
 
   &__img {

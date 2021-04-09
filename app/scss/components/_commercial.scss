@@ -14,7 +14,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 83px;
+    min-width: 83px;
     color: $payap;
     transition: color 0.3s ease;
 
@@ -94,6 +94,7 @@
     color: $payap;
     transition: all 0.3s ease;
     border-bottom: 1px solid transparent;
+    @include line-clamp;
   }
 
   &__link:hover {

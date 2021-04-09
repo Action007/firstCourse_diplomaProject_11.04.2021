@@ -5,6 +5,11 @@
   &__wrapper {
     padding-top: 121px;
     margin-bottom: 120px;
+
+    @include for-tablet-landscape-down {
+      margin-bottom: 0;
+      padding-top: 20px;
+    }
   }
 
   &__inner {
@@ -13,10 +18,10 @@
     justify-content: space-between;
     margin-bottom: 120px;
 
-    @include for-tablet-portrait-down {
+    @include for-tablet-landscape-down {
       flex-direction: column;
       align-items: center;
-      margin-bottom: 70px;
+      margin-bottom: 0;
     }
   }
 
@@ -28,20 +33,19 @@
 
     @include for-tablet-landscape-down {
       justify-content: center;
-      margin-bottom: 50px;
+      margin-bottom: 20px;
     }
   }
 
   &__img-wrap {
-    min-height: 675px;
     max-width: 570px;
 
     @include for-desktop-down {
-      width: 50%;
+      width: 70%;
     }
 
     @include for-phone-only {
-      width: 70%;
+      width: 80%;
     }
 
     @include for-phone-only {
@@ -50,7 +54,7 @@
   }
 
   &__img {
-    object-fit: cover;
+    object-fit: contain;
     width: 100%;
     height: 100%;
   }
@@ -60,7 +64,7 @@
     align-items: center;
     margin-bottom: 18px;
 
-    @include for-tablet-portrait-down {
+    @include for-tablet-landscape-down {
       justify-content: center;
     }
 
@@ -92,13 +96,14 @@
   }
 
   &__text {
-    padding-bottom: 57px;
-    margin-bottom: 30px;
+    padding-bottom: 54px;
+    margin-bottom: 64px;
     border-bottom: 1px solid #e5eaf0;
   }
 
   &__li {
     display: flex;
+    transform: translateY(-30px);
 
     @include for-tablet-landscape-down {
       flex-wrap: wrap;
@@ -119,7 +124,7 @@
     flex-direction: column;
     align-items: center;
     width: 33.333%;
-    padding-left: 65px;
+    padding-left: 24px;
 
     @include for-tablet-landscape-down {
       justify-content: center;
@@ -139,17 +144,8 @@
     background-size: contain;
     background-repeat: no-repeat;
 
-    @include for-desktop-down {
-      align-items: center;
-      left: 33%;
-    }
-
-    @include for-phone-only {
-      left: 22%;
-    }
-
     @include for-miniphone-only {
-      left: 12%;
+      left: -4%;
     }
   }
 

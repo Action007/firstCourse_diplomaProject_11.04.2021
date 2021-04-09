@@ -1,0 +1,17 @@
+<div class="blog__filter">
+  <form class="blog__form" action="#">
+    <label class="blog__label">
+      <input class="blog__input" type="text">
+    </label>
+    <button class="blog__btn">
+      <span class="sr-only">search product</span>
+      <svg class="blog__btn-svg">
+        <use xlink:href="images/icon/sprite.svg#search-blog"></use>
+      </svg>
+    </button>
+  </form>
+  <div class="blog__filter-wrap">
+    @include('_filter-category.html')
+  </div>
+  @include('_blog__filter.html')
+</div>

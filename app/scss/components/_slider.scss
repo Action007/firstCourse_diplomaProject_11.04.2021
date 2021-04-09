@@ -86,7 +86,7 @@
 
     p {
       @include line-clamp;
-      
+
       @extend %rubik-400;
       max-width: 366px;
       margin-bottom: 37px;
@@ -134,7 +134,7 @@
   }
 
   &__title {
-    @include line-clamp;
+    @include line-clamp2;
     max-width: 417px;
     margin-bottom: 11px;
     font-size: 70px;
@@ -168,7 +168,7 @@
   }
 
   &__img-size {
-    max-width: 520px;
+    max-width: 640px;
   }
 
   &__img {
@@ -315,9 +315,11 @@
   }
 
   &__subtitle {
+    @include line-clamp1;
     @extend %dmsans-700;
     font-size: 18px;
     line-height: 2;
+    max-width: 330px;
     color: #414141;
   }
 

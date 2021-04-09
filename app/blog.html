@@ -103,23 +103,24 @@
       <div class="container">
         <div class="blog__inner">
           <div class="blog__items-inner">
-            <button class="filter-btn" type="button">
+            <div class="blog__filter-inner">
+              <button class="filter-btn" type="button">
   Filter
   <svg class="filter-btn__svg">
     <use xlink:href="images/icon/sprite.svg#18819658861556283886"></use>
   </svg>
 </button>
+            </div>
             <ul class="blog__items">
-              <li class="blog__item">
                 <li class="blog__item">
-  <a class="blog__img-inner" href="#">
+  <div class="blog__img-inner">
     <img class="blog__img" src="../images/content/room--big1.jpg" alt="Picture with furniture">
-  </a>
-  <div class="blog__wrap">
-    <time datetime="2020-01-28" class="blog__time">
-      28 janvar,2020
-    </time>
-    <span class="blog__admin">by admin</span>
+    <div class="blog__wrap">
+      <time class="blog__time" datetime="2020-01-28">
+        28 janvar,2020
+      </time>
+      <span class="blog__admin">by admin</span>
+    </div>
   </div>
   <a class="blog__wrapper" href="#">
     <span class="blog__title">
@@ -138,18 +139,18 @@
     </svg>
   </a>
 </li><li class="blog__item">
-  <a class="blog__img-inner" href="#">
+  <div class="blog__img-inner">
     <img class="blog__img" src="../images/content/room--big2.jpg" alt="Picture with furniture">
-  </a>
-  <div class="blog__wrap">
-    <time datetime="2020-01-28" class="blog__time">
-      28 janvar,2020
-    </time>
-    <span class="blog__admin">by admin</span>
+    <div class="blog__wrap">
+      <time class="blog__time" datetime="2020-01-28">
+        28 janvar,2020
+      </time>
+      <span class="blog__admin">by admin</span>
+    </div>
   </div>
   <a class="blog__wrapper" href="#">
     <span class="blog__title">
-      Fonsectetur adipisicing eiusmod
+      Fonsectetur adipisicing elit,
     </span>
     <div class="blog__text">
       <p>
@@ -164,18 +165,18 @@
     </svg>
   </a>
 </li><li class="blog__item">
-  <a class="blog__img-inner" href="#">
+  <div class="blog__img-inner">
     <img class="blog__img" src="../images/content/room--big3.jpg" alt="Picture with furniture">
-  </a>
-  <div class="blog__wrap">
-    <time datetime="2020-01-28" class="blog__time">
-      28 janvar,2020
-    </time>
-    <span class="blog__admin">by admin</span>
+    <div class="blog__wrap">
+      <time class="blog__time" datetime="2020-01-28">
+        28 janvar,2020
+      </time>
+      <span class="blog__admin">by admin</span>
+    </div>
   </div>
   <a class="blog__wrapper" href="#">
     <span class="blog__title">
-      Fonsectetur adipisicing eiusmod
+      Fsectetur adipisicing tempor incididunt
     </span>
     <div class="blog__text">
       <p>
@@ -190,18 +191,18 @@
     </svg>
   </a>
 </li><li class="blog__item">
-  <a class="blog__img-inner" href="#">
+  <div class="blog__img-inner">
     <img class="blog__img" src="../images/content/room--big4.jpg" alt="Picture with furniture">
-  </a>
-  <div class="blog__wrap">
-    <time datetime="2020-01-28" class="blog__time">
-      28 janvar,2020
-    </time>
-    <span class="blog__admin">by admin</span>
+    <div class="blog__wrap">
+      <time class="blog__time" datetime="2020-01-28">
+        28 janvar,2020
+      </time>
+      <span class="blog__admin">by admin</span>
+    </div>
   </div>
   <a class="blog__wrapper" href="#">
     <span class="blog__title">
-      Fonsectetur adipisicing eiusmod
+      vonsectetur adipisicing elit
     </span>
     <div class="blog__text">
       <p>
@@ -229,20 +230,20 @@
 </li>
 </ul>
           </div>
-          <div class="blog__filter">
-            <form class="blog__form" action="#">
-              <label class="blog__label">
-                <input class="blog__input" type="text">
-              </label>
-              <button class="blog__btn">
-                <span class="sr-only">search product</span>
-                <svg class="blog__btn-svg">
-                  <use xlink:href="images/icon/sprite.svg#search-blog"></use>
-                </svg>
-              </button>
-            </form>
-            <div class="blog__filter-wrap">
-              <div class="filter-category__items">
+            <div class="blog__filter">
+  <form class="blog__form" action="#">
+    <label class="blog__label">
+      <input class="blog__input" type="text">
+    </label>
+    <button class="blog__btn">
+      <span class="sr-only">search product</span>
+      <svg class="blog__btn-svg">
+        <use xlink:href="images/icon/sprite.svg#search-blog"></use>
+      </svg>
+    </button>
+  </form>
+  <div class="blog__filter-wrap">
+    <div class="filter-category__items">
   <h3 class="filter-category__title">category</h3>
   <ul class="filter-category__list">
     <li class="filter-category__item">
@@ -269,8 +270,8 @@
 </li>
   </ul>
 </div>
-            </div>
-            <div class="blog__sift">
+  </div>
+  <div class="blog__sift">
   <h3 class="blog__subtitle">recent post</h3>
   <ul class="blog__list">
     <li class="blog__li">
@@ -324,7 +325,7 @@
 </li>
   </ul>
 </div>
-          </div>
+</div>
         </div>
       </div>
       <div class="blog-partners">

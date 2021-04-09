@@ -158,7 +158,6 @@ button {
     justify-content: center;
     min-height: 205px;
     padding: 0 10px;
-    max-width: 250px;
   }
 
   &__img {
@@ -199,9 +198,11 @@ button {
   }
 
   &__subtitle {
+    @include line-clamp1;
     @extend %dmsans-500;
-    color: $payap;
+    color: $fontcolor;
     transition: color 0.1s ease;
+    font-size: 16px;
   }
 
   &__subtitle:hover {
@@ -288,6 +289,7 @@ button {
     align-items: center;
     max-width: 167px;
     min-height: 84px;
+    margin: 0 auto;
   }
 
   &__logo {

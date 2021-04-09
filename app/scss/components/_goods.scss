@@ -37,6 +37,7 @@
     }
   }
 }
+
 .promo {
   margin-bottom: 86px;
   @extend %rubik-400;
@@ -97,6 +98,7 @@
     p {
       min-height: 80px;
       line-height: 1.9;
+      @include line-clamp;
 
       @include for-phone-only {
         line-height: 1.6;
@@ -143,6 +145,7 @@
   }
 
   &__title {
+    @include line-clamp2;
     font-size: 26px;
     line-height: 1.4;
     margin-bottom: 13px;
