@@ -1,0 +1,111 @@
+.login {
+  padding: 12px 0 368px 0;
+
+  @include for-tablet-portrait-down {
+    padding: 12px 0 250px 0;
+  }
+
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    max-width: 505px;
+    padding: 118px 15px 120px;
+    margin: 0 auto;
+
+    @include for-tablet-portrait-down {
+      padding: 60px 15px 120px;
+    }
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+  }
+
+  &__label {
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+    @extend %rubik-400;
+    color: $random-color;
+    margin-bottom: 26px;
+
+    span {
+      display: block;
+      margin-bottom: 11px;
+    }
+  }
+
+  &__input {
+    width: 100%;
+    height: 60px;
+    border: 1px solid #f6f6f6;
+  }
+
+  &__span {
+    text-align: center;
+  }
+
+  &__btn {
+    width: 100%;
+    min-height: 60px;
+    background-color: $icon-bg;
+    color: $white;
+    font-size: 18px;
+    @extend %rubik-500;
+    margin-bottom: 30px;
+    padding: 0 10px;
+    transition: all 0.3s ease;
+    text-align: center;
+    border: 1px solid $icon-bg;
+  }
+
+  &__btn:hover {
+    background-color: $white;
+    color: $icon-bg;
+  }
+
+  &__wrap {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+    border-bottom: 1px solid #f6f6f6;
+  }
+
+  &__pass {
+    font-size: 14px;
+    @extend %rubik-400;
+    color: #436372;
+  }
+
+  &__check {
+    label {
+      cursor: pointer;
+    }
+  }
+
+  &__span {
+    display: block;
+    font-size: 14px;
+    @extend %rubik-400;
+    color: $random-color;
+    margin-bottom: 22px;
+  }
+
+  &__button {
+    padding: 19px 10px 19px;
+    font-size: 18px;
+    @extend %rubik-500;
+    color: $fontcolor;
+    text-align: center;
+    border: 1px solid $icon-bg;
+    transition: all 0.3s ease;
+  }
+
+  &__button:hover {
+    background-color: $fontcolor;
+    color: $white;
+  }
+}

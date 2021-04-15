@@ -1,0 +1,61 @@
+@include('components/_head.html',{
+"head-title" : "Glee | Product Details"
+})
+
+<body>
+
+  @include('components/_header.html')
+
+  <main class="main">
+    @include('components/_breadcrumbs.html',{
+    "title" : "Contact",
+    "subtitle1" : "Home",
+    "subtitle2" : "About Us"
+    })
+
+    <section class="login">
+      <div class="login__inner">
+        <form class="login__form">
+          <label class="login__label">
+            <span>
+              Username or email address *
+            </span>
+            <input class="login__input" type="email" required>
+          </label>
+          <label class="login__label">
+            <span>
+              Password *
+            </span>
+            <input class="login__input" type="password" required>
+          </label>
+          <button class="login__btn" type="submit">
+            Login
+          </button>
+        </form>
+        <div class="login__wrap">
+          <form class="login__check">
+            <label>
+              <input class="login__checkbox" type="checkbox">
+              Remember me
+            </label>
+          </form>
+          <a class="login__pass" href="#">Lost your password?</a>
+        </div>
+        <span class="login__span">Not registered? No problem</span>
+        <a class="login__button" href="#">
+          Create an account
+        </a>
+      </div>
+    </section>
+
+    @include('components/_commercial.html')
+  </main>
+
+  @include('components/_footer.html')
+
+  <script src="https://maps.googleapis.com/maps/api/js?key=&callback=initMap&libraries=&v=weekly" async>
+  </script>
+  <script src="js/main.min.js"></script>
+</body>
+
+</html>

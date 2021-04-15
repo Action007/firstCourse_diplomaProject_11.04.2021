@@ -1,4 +1,39 @@
 $(function () {
+  $('.product-tabs__link').on('click', function (e) {
+    e.preventDefault();
+    $('.product-tabs__link').removeClass('active');
+    $(this).addClass('active')
+
+    $('.product-tabs__text').removeClass('active');
+    $($(this).attr('href')).addClass('active');
+  });
+
+  $('.product-details__list').slick({
+    asNavFor: '.product-details__items',
+    focusOnSelect: true,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    draggable: false,
+    vertical: true,
+
+    responsive: [
+      {
+        breakpoint: 481,
+        settings: {
+          vertical: false
+        }
+      }
+    ]
+  })
+  $('.product-details__items').slick({
+    asNavFor: '.product-details__list',
+    draggable: false,
+    arrows: false,
+    fade: true
+  })
+
+  $('.product-details__input').styler();
+
   $('.product__filter-btn').on('click', function () {
     $('.product__filter-btn').removeClass('product__filter-btn--active');
     $(this).addClass('product__filter-btn--active');
@@ -55,6 +90,35 @@ $(function () {
       console.log(data.to);
     },
   })
+
+  $('.product-slide__list').slick({
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 3000,
+    prevArrow: '<button type="button" class="slick-prev"><svg class="slide-arrow"><use xlink:href="images/icon/sprite.svg#left"></use xlink:href=></svg></button>',
+    nextArrow: '<button type="button" class="slick-next"><svg class="slide-arrow"><use xlink:href="images/icon/sprite.svg#right"></use xlink:href=></svg></button>',
+    responsive: [
+      {
+        breakpoint: 1150,
+        settings: {
+          slidesToShow: 3
+        }
+      },
+      {
+        breakpoint: 880,
+        settings: {
+          slidesToShow: 2
+        }
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 1
+        }
+      }
+    ]
+  });
 
   $('.partners').slick({
     slidesToShow: 5,
@@ -139,3 +203,12 @@ window.addEventListener("scroll", function () {
   const menu = document.querySelector(".menu");
   menu.classList.toggle("sticky", window.scrollY > 50);
 })
+
+let map;
+
+function initMap() {
+  map = new google.maps.Map(document.getElementById("map"), {
+    center: { lat: 29.76176072457447, lng: -95.36769250265 },
+    zoom: 9,
+  });
+}

@@ -1,0 +1,117 @@
+@include('components/_head.html',{
+"head-title" : "Glee | Product Details"
+})
+
+<body>
+
+  @include('components/_header.html')
+
+  <main class="main">
+    @include('components/_breadcrumbs.html',{
+    "title" : "Contact",
+    "subtitle1" : "Home",
+    "subtitle2" : "About Us"
+    })
+
+    <section class="contacts">
+      <div class="container">
+        <div class="contacts__title-wrap">
+          <span class="contacts__first">Write Here</span>
+          <h2 class="contacts__title">
+            Get In Touch
+          </h2>
+        </div>
+        <ul class="contacts__items">
+          <li class="contacts__item">
+            <a class="contacts__link" href="#">
+              <div class="contacts__svg-wrap">
+                <svg class="contacts__svg">
+                  <use xlink:href="images/icon/sprite.svg#map"></use>
+                </svg>
+              </div>
+              <div class="contacts__address">
+                <span class="contacts__subtitle">
+                  Address
+                </span>
+                <span>
+                  2416 Mapleview Drive
+                </span>
+                <span>
+                  Tampa, FL 33634
+                </span>
+              </div>
+            </a>
+          </li>
+          <li class="contacts__item">
+            <a class="contacts__link" href="mailto:contact@Glee.com">
+              <div class="contacts__svg-wrap">
+                <svg class="contacts__svg">
+                  <use xlink:href="images/icon/sprite.svg#email"></use>
+                </svg>
+              </div>
+              <div class="contacts__address">
+                <span class="contacts__subtitle">
+                  Our Email
+                </span>
+                <span>
+                  Main Email : contact@website.com
+                </span>
+                <span>
+                  Inquiries : Info@mail.com 
+                </span>
+              </div>
+            </a>
+          </li>
+          <li class="contacts__item">
+            <a class="contacts__link" href="tel:+0029129102320">
+              <div class="contacts__svg-wrap">
+                <svg class="contacts__svg">
+                  <use xlink:href="images/icon/sprite.svg#phone"></use>
+                </svg>
+              </div>
+              <div class="contacts__address">
+                <span class="contacts__subtitle">
+                  Our Phone
+                </span>
+                <span>
+                  Office Telephone : 002912910232
+                </span>
+                <span>
+                  Mobile : 000232439493
+                </span>
+              </div>
+            </a>
+          </li>
+        </ul>
+        <div class="contacts__wrapper">
+          <form class="contacts__form" action="#">
+            <div class="contacts__inner">
+              <label class="contacts__label">
+                <input class="contacts__input" type="text" placeholder="name">
+              </label>
+              <label class="contacts__label">
+                <input class="contacts__input" type="email" placeholder="email">
+              </label>
+            </div>
+            <label>
+              <textarea class="contacts__textarea" placeholder="message"></textarea>
+            </label>
+            <button class="contacts__button" type="submit">send message</button>
+          </form>
+          <div id="map"></div>
+        </div>
+      </div>
+    </section>
+
+    @include('components/_commercial.html')
+  </main>
+
+  @include('components/_footer.html')
+
+  <script src="https://maps.googleapis.com/maps/api/js?key=&callback=initMap&libraries=&v=weekly"
+    async>
+  </script>
+  <script src="js/main.min.js"></script>
+</body>
+
+</html>

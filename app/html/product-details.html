@@ -1,0 +1,180 @@
+@include('components/_head.html',{
+"head-title" : "Glee | Product Details"
+})
+
+<body>
+
+  @include('components/_header.html')
+
+  <main class="main">
+    @include('components/_breadcrumbs.html',{
+    "title" : "Product Details",
+    "subtitle1" : "Home",
+    "subtitle2" : "About Us"
+    })
+
+    <section class="product-details">
+      <div class="container">
+        <div class="product-details__inner">
+          <div class="product-details__slider">
+            <ul class="product-details__list">
+              <li class="product-details__thumb product-details__thumb--first">
+                <div class="product-details__thumb-img">
+                  <img src="../images/content/lamp1.png" alt="lamp">
+                </div>
+              </li>
+              <li class="product-details__thumb">
+                <div class="product-details__thumb-img">
+                  <img src="../images/content/lamp2.png" alt="lamp">
+                </div>
+              </li>
+              <li class="product-details__thumb">
+                <div class="product-details__thumb-img">
+                  <img src="../images/content/lamp3.png" alt="lamp">
+                </div>
+              </li>
+            </ul>
+            <ul class="product-details__items">
+              <li class="product-details__main">
+                <div class="product-details__img">
+                  <img src="../images/content/lamp1.png" alt="lamp">
+                </div>
+              </li>
+              <li class="product-details__main">
+                <div class="product-details__img">
+                  <img src="../images/content/lamp2.png" alt="lamp">
+                </div>
+              </li>
+              <li class="product-details__main">
+                <div class="product-details__img">
+                  <img src="../images/content/lamp3.png" alt="lamp">
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="product-details__wrapper">
+            <h2 class="product-details__subtitle">
+              Pendant lamp
+            </h2>
+            <div class="star2" data-rateyo-rating="4"></div>
+            <span class="product-details__price">23$</span>
+            <div class="product-details__text">
+              consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+              ad
+              minim
+              veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            </div>
+            <form class="product-details__form">
+              <label class="product-details__label">
+                <input class="product-details__input" type="number" value="1" min="1">
+              </label>
+              <button class="product-details__btn">add to card</button>
+            </form>
+            <ul class="product-details__ul">
+              <div class="product-details__li">SKU: 014</div>
+              <div class="product-details__li">Category: Lights</div>
+              <div class="product-details__li">Tag: Decorative</div>
+            </ul>
+          </div>
+        </div>
+        <div class="product-tabs">
+          <ul class="product-tabs__list">
+            <li class="product-tabs__item">
+              <a class="product-tabs__link product-tabs__link--first active" href="#tab1">Description</a>
+            </li>
+            <li class="product-tabs__item">
+              <a class="product-tabs__link product-tabs__link--two" href="#tab2">Additional information</a>
+            </li>
+            <li class="product-tabs__item">
+              <a class="product-tabs__link product-tabs__link--last" href="#tab3">Reviews (2)</a>
+            </li>
+          </ul>
+          <div class="product-tabs__text active" id="tab1">
+            <p>
+              consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+              ad minim
+              veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo Lorem ipsum dolor sit
+              amet, consectetur
+              adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+              veniam, quis
+              nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            </p>
+          </div>
+          <div class="product-tabs__text" id="tab2">
+            <p>
+              consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+              ad minim
+          </div>
+          <div class="product-tabs__text" id="tab3">
+            <p>
+              consectetur adipisicing elit, sed do eiusmod
+            </p>
+          </div>
+        </div>
+        <div class="product-slide">
+          <h3 class="product-slide__title">
+            Related products
+          </h3>
+          <ul class="product-slide__list">
+            <li class="product-slide__item">
+              @include('components/_product-card.html',{
+              "image" : "images/content/armchair1.png",
+              "card-text" : "Wooden chair"
+              })
+            </li>
+            <li class="product-slide__item">
+              @include('components/_product-card.html',{
+              "image" : "images/content/armchair2.png",
+              "card-text" : "Wooden chair"
+              })
+            </li>
+            <li class="product-slide__item">
+              @include('components/_product-card.html',{
+              "image" : "images/content/armchair3.png",
+              "card-text" : "Retro table"
+              })
+            </li>
+            <li class="product-slide__item">
+              @include('components/_product-card.html',{
+              "image" : "images/content/armchair4.png",
+              "card-text" : "Wooden chair"
+              })
+            </li>
+            <li class="product-slide__item">
+              @include('components/_product-card.html',{
+              "image" : "images/content/armchair5.png",
+              "card-text" : "White chair"
+              })
+            </li>
+            <li class="product-slide__item">
+              @include('components/_product-card.html',{
+              "image" : "images/content/armchair6.png",
+              "card-text" : "Retro table"
+              })
+            </li>
+            <li class="product-slide__item">
+              @include('components/_product-card.html',{
+              "image" : "images/content/armchair7.png",
+              "card-text" : "Wooden chair"
+              })
+            </li>
+            <li class="product-slide__item">
+              @include('components/_product-card.html',{
+              "image" : "images/content/armchair8.png",
+              "card-text" : "Wooden chair"
+              })
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    @include('components/_commercial.html')
+  </main>
+
+  @include('components/_footer.html')
+
+  <script src="js/main.min.js"></script>
+</body>
+
+</html>

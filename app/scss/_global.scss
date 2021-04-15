@@ -148,10 +148,6 @@ button {
     max-width: 100%;
   }
 
-  &:hover &__link {
-    opacity: 1;
-  }
-
   &__wrap {
     display: flex;
     align-items: center;
@@ -181,6 +177,10 @@ button {
     transition: all 0.3s ease;
     box-shadow: 0 5px 5px rgb(104, 104, 104);
     opacity: 0;
+  }
+
+  &:hover &__link {
+    opacity: 1;
   }
 
   &__link:not(:last-child) {
@@ -362,4 +362,10 @@ button {
       background-color: #d8d8d8;
     }
   }
+}
+
+.testmain {
+  width: 127px;
+  height: 127px;
+    fill: blue;
 }

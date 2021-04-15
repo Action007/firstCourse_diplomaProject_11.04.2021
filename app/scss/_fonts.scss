@@ -71,6 +71,16 @@
 
 @font-face {
   font-family: 'DMSans', sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+  src:local('DMSans-Bold'),
+  url('../fonts/DMSans-SemiBold.woff2') format('woff2'),
+  url('../fonts/DMSans-SemiBold.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'DMSans', sans-serif;
   font-weight: 700;
   font-style: normal;
   font-display: swap;

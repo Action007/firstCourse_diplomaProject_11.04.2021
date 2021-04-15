@@ -1,0 +1,30 @@
+.conditions {
+  padding: 112px 0 368px;
+  @extend %rubik-400;
+  color: $fontcolor;
+
+  &__title {
+    margin-bottom: 28px;
+    font-size: 24px;
+    @extend %rubik-500;
+    color: $fontcolor;
+  }
+
+  &__text {
+    display: flex;
+    line-height: 1.9;
+    margin-bottom: 20px;
+
+    span {
+      margin-right: 12px;
+    }
+  }
+
+  &__wrap {
+    margin-bottom: 60px;
+  }
+  
+  &__wrapper {
+    margin-bottom: 60px;
+  }
+}

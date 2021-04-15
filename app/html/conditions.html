@@ -1,0 +1,88 @@
+@include('components/_head.html',{
+"head-title" : "Glee | Product Details"
+})
+
+<body>
+
+  @include('components/_header.html')
+
+  <main class="main">
+    @include('components/_breadcrumbs.html',{
+    "title" : "Contact",
+    "subtitle1" : "Home",
+    "subtitle2" : "About Us"
+    })
+
+    <section class="conditions">
+      <div class="container">
+        <h3 class="conditions__title">Types of Personal Information We Collect</h3>
+        <ul class="conditions__wrap">
+          <li class="conditions__text">
+            <span>01.</span>
+            <p>Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim
+              ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+              aute irure dolor in reprehenderit in voluptate velit esse cillum dolore </p>
+          </li>
+          <li class="conditions__text">
+            <span>02.</span>
+            <p>Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim
+              ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+              aute irure do </p>
+          </li>
+          <li class="conditions__text">
+            <span>03.</span>
+            <p>Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim
+              ad minim veniam, quis nostrud exercitation ullam </p>
+          </li>
+          <li class="conditions__text">
+            <span>04.</span>
+            <p>Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim
+              ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+          </li>
+          <li class="conditions__text">
+            <span>05.</span>
+            <p>Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua </p>
+          </li>
+        </ul>
+        <div class="conditions__wrapper">
+          <h3 class="conditions__title">How marketprosscom Uses Personal Information</h3>
+          <div class="conditions__text">
+            <p>
+              consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+              minim
+              veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+              dolor in
+              reprehenderit in voluptate velit esse cillum dolore
+            </p>
+          </div>
+        </div>
+        <div class="conditions__wrapper">
+          <h3 class="conditions__title">How marketprosscom Uses Personal Information</h3>
+          <div class="conditions__text">
+            <p>
+              consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+              minim
+              veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+              dolor in
+              reprehenderit in voluptate velit esse cillum dolore
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    @include('components/_commercial.html')
+  </main>
+
+  @include('components/_footer.html')
+
+  <script src="https://maps.googleapis.com/maps/api/js?key=&callback=initMap&libraries=&v=weekly" async>
+  </script>
+  <script src="js/main.min.js"></script>
+</body>
+
+</html>
