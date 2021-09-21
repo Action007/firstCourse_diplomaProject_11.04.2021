@@ -212,3 +212,9 @@ function initMap() {
     zoom: 9,
   });
 }
+
+let set = new Set([9, 15]);
+set.add(44);
+console.log(set);
+let arr = [...set];
+console.log(arr); // [9, 15, 44]

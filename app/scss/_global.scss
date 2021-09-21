@@ -5,13 +5,12 @@ body {
 
 body {
   display: flex;
+  flex-direction: column;
   min-height: 100%;
   color: $fontcolor;
   font-size: 16px;
   @extend %dmsans-700;
   background-color: $white;
-  display: flex;
-  flex-direction: column;
 }
 
 body.lock1,
